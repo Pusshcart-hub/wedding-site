@@ -1,15 +1,32 @@
 export default function Petals() {
-return ( <div className="pointer-events-none fixed inset-0 overflow-hidden z-0">
-{[...Array(12)].map((_, i) => (
-<span
-key={i}
-className="absolute w-3 h-3 bg-pink-300 opacity-70 rounded-full animate-float"
-style={{
-left: Math.random() * 100 + "%",
-animationDuration: 6 + Math.random() * 5 + "s",
-animationDelay: Math.random() * 5 + "s"
-}}
-/>
-))} </div>
-);
+  const petalChars = ["🌸", "🌺", "🌹", "✦", "·"];
+
+  return (
+    <div className="pointer-events-none fixed inset-0 overflow-hidden z-10">
+      {[...Array(20)].map((_, i) => {
+        const randomChar =
+          petalChars[Math.floor(Math.random() * petalChars.length)];
+
+        const size = Math.random() * 10 + 10;
+        const left = Math.random() * 100;
+        const duration = Math.random() * 10 + 10;
+        const delay = Math.random() * 10;
+
+        return (
+          <span
+            key={i}
+            className="absolute"
+            style={{
+              left: `${left}%`,
+              fontSize: `${size}px`,
+              animation: `fall ${duration}s linear infinite`,
+              animationDelay: `${delay}s`,
+            }}
+          >
+            {randomChar}
+          </span>
+        );
+      })}
+    </div>
+  );
 }
