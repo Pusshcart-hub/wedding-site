@@ -7,7 +7,9 @@ import Venue from "./components/Venue";
 import Petals from "./components/Petals";
 
 export default function App() {
-return ( <div> <Hero /> 
+return ( 
+   <Petals />
+  <div> <Hero /> 
   <div className="w-12 h-[1px] bg-gray-300 mx-auto my-10"></div>
   <Story /> 
   <div className="w-12 h-[1px] bg-gray-300 mx-auto my-10"></div>
