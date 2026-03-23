@@ -11,12 +11,13 @@ export default function RSVP() {
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+const { name, value } = e.target;
+
+setForm((prev) => ({
+...prev,
+[name]: value
+}));
+};
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,7 +52,7 @@ export default function RSVP() {
             required
           />
           <input
-            type="text"
+            type="email"
             name="email"
             placeholder="Your Email"
             value={form.email}
@@ -70,14 +71,12 @@ export default function RSVP() {
             <option value="no">Cannot attend</option>
           </select>
 
-          <input
-            type="number"
-            name="guests"
-            min="1"
-            value={form.guests}
-            onChange={handleChange}
-            className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
-          />
+          <select
+          name="guests"
+          value={form.guests}
+          onChange={handleChange}
+          className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
+          </select>
 
           <textarea
             name="message"
