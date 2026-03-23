@@ -179,14 +179,17 @@ return (
       )}
 
     </div>
-      {success && (
+      
+  </FadeIn>
+  {success && (
+<div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
 
-<motion.div
-  initial={{ opacity: 0, scale: 0.8, y: 30 }}
-  animate={{ opacity: 1, scale: 1, y: 0 }}
-  transition={{ duration: 0.4 }}
-  className="bg-white rounded-2xl shadow-xl p-8 max-w-sm w-full text-center"
->
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8, y: 30 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      className="bg-white rounded-2xl shadow-xl p-8 max-w-sm w-full text-center"
+    >
   <h3 className="text-2xl font-serif text-burgundy mb-4">
     RSVP Submitted 💌
   </h3>
@@ -202,7 +205,7 @@ return (
     Close
   </button>
 </motion.div>
-  </FadeIn>
+</div>
 </section>
 
 );
