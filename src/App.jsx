@@ -21,7 +21,7 @@ return (
 
   <div className={entered ? "block" : "hidden"}>
     <Petals />
-    <Music autoPlay={startMusic} />
+    <Music />
     <Music />
 
     <Hero />
