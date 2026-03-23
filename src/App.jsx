@@ -1,5 +1,5 @@
 export default function App() {
-const [entered, setEntered] = useState(false);
+const [entered, setEntered] = useState(true);
 
 return (
 <>
