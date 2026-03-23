@@ -20,7 +20,7 @@ return (
      src="https://www.bensound.com/bensound-music/bensound-romantic.mp3"
    />
 
-```
+
   <button
     onClick={toggleMusic}
     className="fixed bottom-20 right-4 z-50 bg-white/80 backdrop-blur px-4 py-2 rounded-full shadow-md text-sm"
@@ -28,7 +28,7 @@ return (
     {playing ? "Pause Music" : "Play Music"}
   </button>
 </>
-```
+
 
 );
 }
