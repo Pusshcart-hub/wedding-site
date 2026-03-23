@@ -26,9 +26,25 @@ return () => clearInterval(interval);
 
 return (
 
-  <section className="min-h-screen pt-20 flex flex-col items-center justify-center text-center px-4 bg-gradient-to-br from-burgundy via-purple-900 to-black text-white">
+  <section className="relative min-h-screen pt-20 flex flex-col items-center justify-center text-center px-4 text-white overflow-hidden">
 
+{/* BACKGROUND IMAGE */}
 
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/HeroImg.JPG"
+      alt="Wedding"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+{/* BURGUNDY OVERLAY */}
+
+  <div className="absolute inset-0 bg-burgundy/40 z-0"></div>
+
+{/* CONTENT */}
+
+  <div className="relative z-10 flex flex-col items-center">
 <motion.div
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
@@ -75,7 +91,7 @@ return (
   ))}
 </motion.div>
 
-
+</div>
   </section>
 );
 }

@@ -1,14 +1,23 @@
 import { useEffect, useState } from "react";
+import { Home, Heart, Calendar, MapPin, Mail } from "lucide-react";
 
 export default function Nav() {
 const [active, setActive] = useState("");
 
+const links = [
+{ id: "hero", icon: <Home size={18} /> },
+{ id: "story", icon: <Heart size={18} /> },
+{ id: "timeline", icon: <Calendar size={18} /> },
+{ id: "venue", icon: <MapPin size={18} /> },
+{ id: "rsvp", icon: <Mail size={18} /> },
+
+];
+
 useEffect(() => {
 const handleScroll = () => {
-const sections = ["story", "timeline", "venue", "rsvp"];
+const sections = ["hero", "story", "timeline","venue", "rsvp"];
+let current = "";
 
-
-  let current = "";
 
   sections.forEach((id) => {
     const el = document.getElementById(id);
@@ -31,31 +40,45 @@ return () => window.removeEventListener("scroll", handleScroll);
 
 const linkClass = (id) =>
 active === id
-? "text-burgundy font-semibold"
-: "text-gray-600 hover:text-burgundy transition duration-300";
+? "text-burgundy scale-110"
+: "text-gray-500 hover:text-burgundy transition duration-300";
 
 return (
-<> <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b px-6 py-3 flex justify-between items-center">
+<>
+{/* DESKTOP NAV */} <nav className="hidden md:flex fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b px-6 py-3 justify-between items-center">
 
 
     <div className="font-serif text-burgundy">
       J & V
     </div>
 
-    <div className="hidden sm:flex gap-6 text-sm">
-      <a href="#story" className={linkClass("story")}>Story</a>
-      <a href="#timeline" className={linkClass("timeline")}>Timeline</a>
-      <a href="#venue" className={linkClass("venue")}>Venue</a>
-      <a href="#rsvp" className={linkClass("rsvp")}>RSVP</a>
+    <div className="flex gap-6">
+      {links.map((link, i) => (
+        <a
+          key={i}
+          href={`#${link.id}`}
+          className={linkClass(link.id)}
+        >
+          {link.icon}
+        </a>
+      ))}
     </div>
 
   </nav>
 
-  <nav className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur border-t flex justify-around py-2 text-xs sm:hidden">
-    <a href="#story" className={linkClass("story")}>Story</a>
-    <a href="#timeline" className={linkClass("timeline")}>Timeline</a>
-    <a href="#venue" className={linkClass("venue")}>Venue</a>
-    <a href="#rsvp" className={linkClass("rsvp")}>RSVP</a>
+  {/* MOBILE NAV */}
+  <nav className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur px-6 py-3 rounded-full shadow-lg flex gap-6 z-50">
+
+    {links.map((link, i) => (
+      <a
+        key={i}
+        href={`#${link.id}`}
+        className={linkClass(link.id)}
+      >
+        {link.icon}
+      </a>
+    ))}
+
   </nav>
 </>
 

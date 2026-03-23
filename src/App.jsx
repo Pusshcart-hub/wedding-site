@@ -7,6 +7,10 @@ import Venue from "./components/Venue";
 import Petals from "./components/Petals"; // ✅ THIS LINE
 import Music from "./components/Music";
 import Intro from "./components/Intro";
+import Program from "./components/Program";
+import DressCode from "./components/DressCode";
+import Rules from "./components/Rules";
+import Divider from "./components/Divider";
 import { useState } from "react";
 export default function App() {
 const [entered, setEntered] = useState(false);
@@ -22,20 +26,27 @@ return (
   <div className={entered ? "block" : "hidden"}>
     <Petals />
     <Music />
-    <Music />
 
     <Hero />
-    <div className="w-12 h-[1px] bg-gray-300 mx-auto my-10"></div>
+    <Divider/>
 
     <Story />
-    <div className="w-12 h-[1px] bg-gray-300 mx-auto my-10"></div>
+    <Divider/>
 
     <Timeline />
-    <div className="w-12 h-[1px] bg-gray-300 mx-auto my-10"></div>
+    <Divider/>
+
+    <Program />
+    <Divider/>
 
     <Venue />
-    <div className="w-12 h-[1px] bg-gray-300 mx-auto my-10"></div>
+    <Divider/>
 
+    <DressCode />
+    <Divider/>
+
+    <Rules />
+    <Divider/>
     <RSVP />
 
     <Nav />
