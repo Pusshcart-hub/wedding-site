@@ -1,20 +1,92 @@
 import { useState } from "react";
 
-export default function RSVP(){
-const [name,setName]=useState("");
+export default function RSVP() {
+const [form, setForm] = useState({
+name: "",
+attending: "yes",
+guests: 1,
+message: ""
+});
+
+const handleChange = (e) => {
+const { name, value } = e.target;
+setForm((prev) => ({
+...prev,
+[name]: value
+}));
+};
 
 const handleSubmit = (e) => {
 e.preventDefault();
-alert("RSVP submitted: " + name);
+alert("RSVP submitted! Thank you, " + form.name);
 };
 
-return ( <section id="rsvp" className="py-16 text-center"> <h2 className="text-3xl font-serif mb-4">RSVP</h2> <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
-<input
-className="w-full border p-3 rounded"
-placeholder="Your name"
-value={name}
-onChange={(e)=>setName(e.target.value)}
-/> <button className="w-full bg-burgundy text-white py-3 rounded">
-Submit </button> </form> </section>
-)
+return (
+
+
+
+
+    <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
+      Join Us
+    </p>
+
+    <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-10">
+      RSVP
+    </h2>
+
+    <form
+      onSubmit={handleSubmit}
+      className="bg-white p-6 sm:p-8 rounded-2xl shadow-md space-y-4"
+    >
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        value={form.name}
+        onChange={handleChange}
+        className="w-full border p-3 rounded-lg"
+        required
+      />
+
+      <select
+        name="attending"
+        value={form.attending}
+        onChange={handleChange}
+        className="w-full border p-3 rounded-lg"
+      >
+        <option value="yes">Will attend</option>
+        <option value="no">Cannot attend</option>
+      </select>
+
+      <input
+        type="number"
+        name="guests"
+        min="1"
+        value={form.guests}
+        onChange={handleChange}
+        className="w-full border p-3 rounded-lg"
+      />
+
+      <textarea
+        name="message"
+        placeholder="Message (optional)"
+        value={form.message}
+        onChange={handleChange}
+        className="w-full border p-3 rounded-lg"
+      />
+
+      <button
+        type="submit"
+        className="w-full bg-burgundy text-white py-3 rounded-lg"
+      >
+        Submit RSVP
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+);
 }
