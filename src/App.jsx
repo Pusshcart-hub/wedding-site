@@ -10,14 +10,18 @@ import Intro from "./components/Intro";
 import { useState } from "react";
 export default function App() {
 const [entered, setEntered] = useState(false);
+const [startMusic, setStartMusic] = useState(false);
 
 return (
 <>
-{!entered && <Intro onEnter={() => setEntered(true)} />}
-
+{!entered && <Intro onEnter={() => {
+  setEntered(true);
+  setStartMusic(true);
+}} />}
 
   <div className={entered ? "block" : "hidden"}>
     <Petals />
+    <Music autoPlay={startMusic} />
     <Music />
 
     <Hero />
