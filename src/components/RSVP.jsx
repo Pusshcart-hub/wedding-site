@@ -1,5 +1,6 @@
 import FadeIn from "./FadeIn";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function RSVP() {
 const [loading, setLoading] = useState(false);
@@ -45,7 +46,7 @@ try {
   });
 
   setSuccess(true);
-
+  setTimeout(() => setSuccess(false), 3000);
   setForm({
     name: "",
     email: "",
@@ -75,12 +76,6 @@ return (
         <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-10">
           RSVP
         </h2>
-
-        {success && (
-          <p className="text-green-600 mb-6">
-            RSVP submitted successfully! 💌
-          </p>
-        )}
 
         {!success && (
           <form
@@ -184,6 +179,29 @@ return (
       )}
 
     </div>
+      {success && (
+
+<motion.div
+  initial={{ opacity: 0, scale: 0.8, y: 30 }}
+  animate={{ opacity: 1, scale: 1, y: 0 }}
+  transition={{ duration: 0.4 }}
+  className="bg-white rounded-2xl shadow-xl p-8 max-w-sm w-full text-center"
+>
+  <h3 className="text-2xl font-serif text-burgundy mb-4">
+    RSVP Submitted 💌
+  </h3>
+
+  <p className="text-gray-600 mb-6">
+    Thank you for your response. We can't wait to celebrate with you!
+  </p>
+
+  <button
+    onClick={() => setSuccess(false)}
+    className="px-6 py-2 bg-burgundy text-white rounded-full hover:opacity-90 transition"
+  >
+    Close
+  </button>
+</motion.div>
   </FadeIn>
 </section>
 
