@@ -4,13 +4,17 @@ export default function Music() {
 const audioRef = useRef(null);
 const [playing, setPlaying] = useState(false);
 
-const toggleMusic = () => {
+const toggleMusic = async () => {
+try {
 if (playing) {
 audioRef.current.pause();
 } else {
-audioRef.current.play();
+await audioRef.current.play();
 }
 setPlaying(!playing);
+} catch (err) {
+console.log("Playback blocked:", err);
+}
 };
 
 return (
