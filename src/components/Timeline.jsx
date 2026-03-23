@@ -48,7 +48,7 @@ className="max-w-4xl mx-auto"
       {events.map((event, i) => (
         <div
           key={i}
-          className="bg-white rounded-xl shadow-md p-6 text-center sm:text-left"
+          className="bg-white/80 backdrop-blur rounded-xl shadow-lg p-6 border border-gray-100 text-center sm:text-left"
         >
           <p className="text-xs uppercase tracking-widest text-gold mb-2">
             {event.date}
