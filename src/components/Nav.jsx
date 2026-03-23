@@ -1,8 +1,6 @@
 export default function Nav() {
 return (
-<>
-{/* Top Nav (desktop + mobile) */}
-
+<> <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b px-6 py-3 flex justify-between items-center">
 
 
     <div className="font-serif text-burgundy">
@@ -10,15 +8,14 @@ return (
     </div>
 
     <div className="hidden sm:flex gap-6 text-sm">
-      <a href="#story" className="hover:text-burgundy">Story</a>
-      <a href="#timeline" className="hover:text-burgundy">Timeline</a>
-      <a href="#venue" className="hover:text-burgundy">Venue</a>
-      <a href="#rsvp" className="hover:text-burgundy">RSVP</a>
+      <a href="#story" className="hover:text-burgundy transition">Story</a>
+      <a href="#timeline" className="hover:text-burgundy transition">Timeline</a>
+      <a href="#venue" className="hover:text-burgundy transition">Venue</a>
+      <a href="#rsvp" className="hover:text-burgundy transition">RSVP</a>
     </div>
 
   </nav>
 
-  {/* Bottom Nav (mobile only) */}
   <nav className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur border-t flex justify-around py-2 text-xs sm:hidden">
     <a href="#story">Story</a>
     <a href="#timeline">Timeline</a>
@@ -26,6 +23,7 @@ return (
     <a href="#rsvp">RSVP</a>
   </nav>
 </>
+
 
 );
 }
