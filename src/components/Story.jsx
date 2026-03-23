@@ -1,6 +1,8 @@
+import FadeIn from "./FadeIn";
 export default function Story() {
-return ( <section id="story" className="py-24 px-4 text-center bg-cream"> <div className="max-w-2xl mx-auto">
-
+return ( 
+    <section id="story" className="py-24 px-4 text-center bg-cream"> <div className="max-w-2xl mx-auto">
+<FadeIn>
 
     <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
       Our Story
@@ -20,6 +22,7 @@ return ( <section id="story" className="py-24 px-4 text-center bg-cream"> <div c
     </p>
 
   </div>
+    </FadeIn>
 </section>
 
 
