@@ -22,7 +22,25 @@ setForm((prev) => ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("RSVP submitted! Thank you, " + form.name);
+    try {
+await fetch("https://script.google.com/macros/s/AKfycbx6iI_1CAlzVvBGPjuiocepPTqf_ZUwVuKzYmvkpfwBBHzlQO_2upjCUQf-iEh4kFMq/exec", {
+method: "POST",
+body: JSON.stringify(form),
+});
+
+alert("RSVP submitted successfully! 💌");
+
+setForm({
+  name: "",
+  email: "",
+  attending: "yes",
+  guests: 1,
+  message: ""
+});
+
+} catch (error) {
+alert("Something went wrong. Please try again.");
+}
   };
 
   return (
