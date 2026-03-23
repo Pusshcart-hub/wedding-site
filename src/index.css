@@ -11,3 +11,6 @@ color: #2D1B3D;
 h1, h2, h3 {
 font-family: 'Cormorant Garamond', serif;
 }
+html {
+scroll-behavior: smooth;
+}
