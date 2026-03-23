@@ -76,7 +76,7 @@ setForm((prev) => ({
           value={form.guests}
           onChange={handleChange}
           className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
-          </select>
+          />
 
           <textarea
             name="message"
