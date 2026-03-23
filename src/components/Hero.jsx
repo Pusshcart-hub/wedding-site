@@ -9,7 +9,7 @@ const target = new Date("2026-10-17T12:00:00");
 const now = new Date();
 const diff = target - now;
 
-```
+
   const d = Math.floor(diff / 86400000);
   const h = Math.floor((diff % 86400000) / 3600000);
   const m = Math.floor((diff % 3600000) / 60000);
@@ -19,13 +19,13 @@ const diff = target - now;
 }, 1000);
 
 return () => clearInterval(interval);
-```
+
 
 }, []);
 
 return ( <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 bg-gradient-to-br from-burgundy via-purple-900 to-black text-white">
 
-```
+
   <p className="uppercase tracking-[0.3em] text-xs text-gray-300 mb-4">
     Together Forever
   </p>
@@ -61,7 +61,7 @@ return ( <section className="min-h-screen flex flex-col items-center justify-cen
   </div>
 
 </section>
-```
+
 
 );
 }
