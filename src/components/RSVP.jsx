@@ -21,11 +21,9 @@ e.preventDefault();
 alert("RSVP submitted! Thank you, " + form.name);
 };
 
-return (
+return ( <section id="rsvp" className="py-20 px-4 bg-gray-50"> <div className="max-w-xl mx-auto text-center">
 
-
-
-
+```
     <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
       Join Us
     </p>
@@ -72,21 +70,5 @@ return (
         name="message"
         placeholder="Message (optional)"
         value={form.message}
-        onChange={handleChange}
-        className="w-full border p-3 rounded-lg"
-      />
+        onChange={handleCh
 
-      <button
-        type="submit"
-        className="w-full bg-burgundy text-white py-3 rounded-lg"
-      >
-        Submit RSVP
-      </button>
-
-    </form>
-
-  </div>
-</section>
-
-);
-}
