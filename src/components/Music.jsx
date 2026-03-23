@@ -1,8 +1,16 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
-export default function Music() {
+export default function Music({ autoPlay }) {
 const audioRef = useRef(null);
 const [playing, setPlaying] = useState(false);
+
+useEffect(() => {
+if (autoPlay && audioRef.current) {
+audioRef.current.play()
+.then(() => setPlaying(true))
+.catch(() => {});
+}
+}, [autoPlay]);
 
 const toggleMusic = async () => {
 try {
@@ -18,11 +26,9 @@ console.log("Playback blocked:", err);
 };
 
 return (
-<> <audio
-     ref={audioRef}
-     loop
-     src="https://www.bensound.com/bensound-music/bensound-romantic.mp3"
-   />
+<>
+{/* ✅ THIS WAS MISSING */}
+
 
 
   <button
@@ -32,7 +38,6 @@ return (
     {playing ? "Pause Music" : "Play Music"}
   </button>
 </>
-
 
 );
 }
