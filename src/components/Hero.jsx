@@ -32,7 +32,7 @@ return (
 
   <div className="absolute inset-0 z-0">
     <img
-      src="/HeroImg.JPG"
+      src="/hero.jpg"
       alt="Wedding"
       className="w-full h-full object-cover"
     />
