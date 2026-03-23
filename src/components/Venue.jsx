@@ -1,7 +1,8 @@
+import FadeIn from "./FadeIn";
 export default function Venue() {
 return ( <section id="venue" className="py-20 px-4 bg-white"> <div className="max-w-5xl mx-auto text-center">
+<FadeIn>
 
-```
     <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
       Location
     </p>
@@ -34,6 +35,7 @@ return ( <section id="venue" className="py-20 px-4 bg-white"> <div className="ma
     </div>
 
   </div>
+    </FadeIn>
 </section>
 
 
