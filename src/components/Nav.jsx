@@ -7,7 +7,7 @@ useEffect(() => {
 const handleScroll = () => {
 const sections = ["story", "timeline", "venue", "rsvp"];
 
-```
+
   let current = "";
 
   sections.forEach((id) => {
@@ -25,7 +25,7 @@ const sections = ["story", "timeline", "venue", "rsvp"];
 
 window.addEventListener("scroll", handleScroll);
 return () => window.removeEventListener("scroll", handleScroll);
-```
+
 
 }, []);
 
@@ -37,7 +37,7 @@ active === id
 return (
 <> <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b px-6 py-3 flex justify-between items-center">
 
-```
+
     <div className="font-serif text-burgundy">
       J & V
     </div>
@@ -58,7 +58,7 @@ return (
     <a href="#rsvp" className={linkClass("rsvp")}>RSVP</a>
   </nav>
 </>
-```
+
 
 );
 }
