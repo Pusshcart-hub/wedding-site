@@ -6,7 +6,8 @@ export default function RSVP() {
     name: "",
     email: "",
     attending: "yes",
-    guests: 1,
+    guests: 0,
+    companion:"",
     message: ""
   });
 
@@ -87,15 +88,28 @@ setForm((prev) => ({
   </label>
 </div>
 
-          <select
-          name="guests"
-          value={form.guests}
-          onChange={handleChange}
-          className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
-          >
-            <option value="1">1 Guest</option>
-          <option value="2">2 Guests</option>
-          </select>
+       {form.attending === "yes" && (
+  <select
+    name="guests"
+    value={form.guests}
+    onChange={handleChange}
+    className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
+  >
+    <option value="1">1 Guest</option>
+    <option value="2">2 Guests</option>
+  </select>
+)}
+{form.guests === "2" && (
+          <input
+            type="text"
+            name="companion"
+            placeholder="Name of Companion"
+            value={form.companion}
+            onChange={handleChange}
+            className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
+            required
+          />
+  )}
 
           <textarea
             name="message"
