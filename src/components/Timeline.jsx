@@ -22,7 +22,7 @@ desc: "The beginning of our forever."
 }
 ];
 
-return ( <section id="timeline" className="py-20 px-4 bg-gray-50"> <div className="max-w-4xl mx-auto">
+return ( <section id="timeline" className="py-24 px-4 bg-gray-50"> <div className="max-w-4xl mx-auto">
 
 
     <div className="text-center mb-12">
