@@ -9,7 +9,7 @@ import Music from "./components/Music";
 import Intro from "./components/Intro";
 import { useState } from "react";
 export default function App() {
-const [entered, setEntered] = useState(true);
+const [entered, setEntered] = useState(false);
 
 return (
 <>
