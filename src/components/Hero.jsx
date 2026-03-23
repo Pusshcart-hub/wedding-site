@@ -24,7 +24,7 @@ return () => clearInterval(interval);
 
 }, []);
 
-return ( return (
+return (
 
   <section className="min-h-screen pt-20 flex flex-col items-center justify-center text-center px-4 bg-gradient-to-br from-burgundy via-purple-900 to-black text-white">
 
