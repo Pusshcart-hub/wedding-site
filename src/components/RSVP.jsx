@@ -77,14 +77,14 @@ return (
         RSVP
       </h2>
 
-      {/* ✅ Success Message */}
+      {/* ✅ Success message */}
       {success && (
         <p className="text-green-600 mb-6">
           RSVP submitted successfully! 💌
         </p>
       )}
 
-      {/* ✅ Hide form after submit */}
+      {/* ✅ Form */}
       {!success && (
         <form
           onSubmit={handleSubmit}
@@ -139,7 +139,6 @@ return (
 
           {form.attending === "yes" && (
             <>
-              {/* ✅ Label added */}
               <p className="text-sm text-gray-500">Number of Guests</p>
 
               <select
