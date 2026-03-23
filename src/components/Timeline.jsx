@@ -1,3 +1,4 @@
+import FadeIn from "./FadeIn";
 import { motion } from "framer-motion";
 
 export default function Timeline() {
@@ -25,6 +26,7 @@ desc: "The beginning of our forever."
 ];
 
 return ( <section id="timeline" className="py-24 px-4 bg-gray-50">
+    <FadeIn>
 <motion.div
 initial={{ opacity: 0, y: 40 }}
 whileInView={{ opacity: 1, y: 0 }}
@@ -66,6 +68,7 @@ className="max-w-4xl mx-auto"
     </div>
 
   </motion.div>
+        </FadeIn>
 </section>
 
 
