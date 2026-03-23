@@ -24,8 +24,7 @@ desc: "The beginning of our forever."
 }
 ];
 
-return (
-
+return ( <section id="timeline" className="py-24 px-4 bg-gray-50">
 <motion.div
 initial={{ opacity: 0, y: 40 }}
 whileInView={{ opacity: 1, y: 0 }}
@@ -34,6 +33,7 @@ viewport={{ once: true }}
 className="max-w-4xl mx-auto"
 >
 
+```
     <div className="text-center mb-12">
       <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
         Moments
@@ -67,6 +67,7 @@ className="max-w-4xl mx-auto"
 
   </motion.div>
 </section>
+
 
 );
 }
