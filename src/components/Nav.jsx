@@ -8,19 +8,19 @@ return (
     </div>
 
     <div className="hidden sm:flex gap-6 text-sm">
-      <a href="#story" className="hover:text-burgundy transition">Story</a>
-      <a href="#timeline" className="hover:text-burgundy transition">Timeline</a>
-      <a href="#venue" className="hover:text-burgundy transition">Venue</a>
-      <a href="#rsvp" className="hover:text-burgundy transition">RSVP</a>
+      <a href="#story" className="hover:text-burgundy transition duration-300">Story</a>
+      <a href="#timeline" className="hover:text-burgundy transition duration-300">Timeline</a>
+      <a href="#venue" className="hover:text-burgundy transition duration-300">Venue</a>
+      <a href="#rsvp" className="hover:text-burgundy transition duration-300">RSVP</a>
     </div>
 
   </nav>
 
   <nav className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur border-t flex justify-around py-2 text-xs sm:hidden">
-    <a href="#story">Story</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#venue">Venue</a>
-    <a href="#rsvp">RSVP</a>
+    <a href="#story" className="hover:text-burgundy transition duration-300">Story</a>
+    <a href="#timeline" className="hover:text-burgundy transition duration-300">Timeline</a>
+    <a href="#venue" className="hover:text-burgundy transition duration-300">Venue</a>
+    <a href="#rsvp" className="hover:text-burgundy transition duration-300">RSVP</a>
   </nav>
 </>
 
