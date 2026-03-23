@@ -1,3 +1,4 @@
+import FadeIn from "./FadeIn";
 import { useState } from "react";
 
 export default function RSVP() {
@@ -23,6 +24,7 @@ export default function RSVP() {
 
   return (
     <section id="rsvp" className="py-24 px-4 bg-gray-50">
+      <FadeIn>
       <div className="max-w-xl mx-auto text-center">
 
         <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
@@ -85,6 +87,7 @@ export default function RSVP() {
         </form>
 
       </div>
+        </FadeIn>
     </section>
   );
 }
