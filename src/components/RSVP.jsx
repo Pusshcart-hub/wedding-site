@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function RSVP() {
   const [form, setForm] = useState({
     name: "",
+    email: "",
     attending: "yes",
     guests: 1,
     message: ""
@@ -45,6 +46,15 @@ export default function RSVP() {
             name="name"
             placeholder="Your Name"
             value={form.name}
+            onChange={handleChange}
+            className="w-full border p-3 rounded-lg"
+            required
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Your Email"
+            value={form.email}
             onChange={handleChange}
             className="w-full border p-3 rounded-lg"
             required
