@@ -33,7 +33,9 @@ return ( <section className="min-h-screen pt-20 flex flex-col items-center justi
   <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-light mb-4">
     Joanna <span className="text-gold italic">&</span> Vincent
   </h1>
-
+<p className="text-sm text-gray-400 mt-2 tracking-widest">
+  #JoannaAndVincent2026
+</p>
   <p className="text-lg sm:text-xl text-gray-300 mb-8 italic">
     October 17, 2026
   </p>
