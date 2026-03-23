@@ -6,7 +6,7 @@ export default function RSVP() {
     name: "",
     email: "",
     attending: "yes",
-    guests: 0,
+    guests: "1",
     companion:"",
     message: ""
   });
@@ -14,13 +14,23 @@ export default function RSVP() {
   const handleChange = (e) => {
 const { name, value } = e.target;
 
+if (name === "attending" && value === "no") {
+setForm((prev) => ({
+...prev,
+attending: value,
+guests: "1",
+companion: ""
+}));
+return;
+}
+
 setForm((prev) => ({
 ...prev,
 [name]: value
 }));
 };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
 await fetch("https://script.google.com/macros/s/AKfycbx6iI_1CAlzVvBGPjuiocepPTqf_ZUwVuKzYmvkpfwBBHzlQO_2upjCUQf-iEh4kFMq/exec", {
@@ -34,7 +44,8 @@ setForm({
   name: "",
   email: "",
   attending: "yes",
-  guests: 1,
+  guests: "1",
+  companion:"",
   message: ""
 });
 
@@ -117,7 +128,7 @@ alert("Something went wrong. Please try again.");
     <option value="2">2 Guests</option>
   </select>
 )}
-{form.guests === "2" && (
+{form.attending === "yes" && form.guests === "2" && (
           <input
             type="text"
             name="companion"
