@@ -7,6 +7,7 @@ import Venue from "./components/Venue";
 import Petals from "./components/Petals";
 import { useState } from "react";
 import Intro from "./components/Intro";
+import Music from "./components/Music";
 export default function App() {
 const [entered, setEntered] = useState(false);
 
@@ -16,7 +17,7 @@ const [entered, setEntered] = useState(false);
 
 <div className={entered ? "block" : "hidden"}>
   <Petals />
-
+<Music />
   <Hero />
   <div className="w-12 h-[1px] bg-gray-300 mx-auto my-10"></div>
 
