@@ -1,9 +1,7 @@
 export default function Venue() {
-return (
+return ( <section id="venue" className="py-20 px-4 bg-white"> <div className="max-w-5xl mx-auto text-center">
 
-
-
-
+```
     <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
       Location
     </p>
@@ -12,7 +10,6 @@ return (
       Wedding Venue
     </h2>
 
-    {/* Venue Card */}
     <div className="bg-cream rounded-2xl shadow-lg p-6 sm:p-10 mb-10">
       <h3 className="text-xl sm:text-2xl font-serif text-burgundy mb-2">
         The Grand Garden Pavilion
@@ -23,11 +20,10 @@ return (
       </p>
 
       <p className="text-gray-500 text-sm">
-        Ceremony & Reception will be held at the same location
+        Ceremony and Reception will be held at the same location
       </p>
     </div>
 
-    {/* Map Embed */}
     <div className="w-full h-[300px] sm:h-[400px] rounded-xl overflow-hidden shadow-md">
       <iframe
         title="venue-map"
@@ -39,6 +35,7 @@ return (
 
   </div>
 </section>
+
 
 );
 }
