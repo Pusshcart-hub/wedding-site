@@ -61,22 +61,41 @@ setForm((prev) => ({
             required
           />
 
-          <select
-            name="attending"
-            value={form.attending}
-            onChange={handleChange}
-            className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
-          >
-            <option value="yes">Will attend</option>
-            <option value="no">Cannot attend</option>
-          </select>
+          <div className="flex justify-center gap-6 text-sm mb-2">
+  <label className="flex items-center gap-2 cursor-pointer">
+    <input
+      type="radio"
+      name="attending"
+      value="yes"
+      checked={form.attending === "yes"}
+      onChange={handleChange}
+      className="accent-burgundy"
+    />
+    Will attend
+  </label>
+
+  <label className="flex items-center gap-2 cursor-pointer">
+    <input
+      type="radio"
+      name="attending"
+      value="no"
+      checked={form.attending === "no"}
+      onChange={handleChange}
+      className="accent-burgundy"
+    />
+    Cannot attend
+  </label>
+</div>
 
           <select
           name="guests"
           value={form.guests}
           onChange={handleChange}
           className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
-          />
+          >
+            <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          </select>
 
           <textarea
             name="message"
