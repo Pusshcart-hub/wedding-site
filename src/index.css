@@ -4,4 +4,10 @@
 
 body {
 font-family: 'Jost', sans-serif;
+background-color: #FAF5F0;
+color: #2D1B3D;
+}
+
+h1, h2, h3 {
+font-family: 'Cormorant Garamond', serif;
 }
