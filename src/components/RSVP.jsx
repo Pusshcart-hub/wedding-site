@@ -77,7 +77,7 @@ export default function RSVP() {
 
           <button
             type="submit"
-            className="w-full bg-burgundy text-white py-3 rounded-lg hover:opacity-90 transition duration-300 shadow-md"
+            className="w-full bg-burgundy text-white py-3 rounded-lg hover:scale-[1.02] hover:opacity-90 transition duration-300 shadow-md"
           >
             Submit RSVP
           </button>
