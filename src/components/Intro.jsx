@@ -17,15 +17,20 @@ return ( <div className="fixed inset-0 z-50 bg-black text-white flex flex-col it
       Joanna & Vincent
     </h1>
 
-    <button
-     onClick={() => {
+<button
+onClick={() => {
 onEnter();
-const audio = new Audio("https://www.bensound.com/bensound-music/bensound-romantic.mp3");
+
+const audio = new Audio("/test.mp3");
 audio.loop = true;
+audio.volume = 0.5; // optional: softer volume
 audio.play().catch(() => {});
-window.bgMusic = audio; // store globally
+
+window.bgMusic = audio;
+
 }}
 className="mt-6 px-6 py-3 border border-white rounded-full hover hover transition duration-300"
+
     >
       Enter
     </button>
