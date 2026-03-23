@@ -39,7 +39,7 @@ return (
     Together Forever
   </p>
 
-  <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-light mb-4">
+  <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-light mb-4 drop-shadow-[0_2px_10px_rgba(255,215,0,0.3)]">
     Joanna <span className="text-gold italic">&</span> Vincent
   </h1>
 
