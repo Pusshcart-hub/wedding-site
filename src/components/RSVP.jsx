@@ -47,7 +47,7 @@ export default function RSVP() {
             placeholder="Your Name"
             value={form.name}
             onChange={handleChange}
-            className="w-full border p-3 rounded-lg"
+            className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
             required
           />
           <input
@@ -56,7 +56,7 @@ export default function RSVP() {
             placeholder="Your Email"
             value={form.email}
             onChange={handleChange}
-            className="w-full border p-3 rounded-lg"
+            className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
             required
           />
 
@@ -64,7 +64,7 @@ export default function RSVP() {
             name="attending"
             value={form.attending}
             onChange={handleChange}
-            className="w-full border p-3 rounded-lg"
+            className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
           >
             <option value="yes">Will attend</option>
             <option value="no">Cannot attend</option>
@@ -76,7 +76,7 @@ export default function RSVP() {
             min="1"
             value={form.guests}
             onChange={handleChange}
-            className="w-full border p-3 rounded-lg"
+            className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
           />
 
           <textarea
@@ -84,7 +84,7 @@ export default function RSVP() {
             placeholder="Message (optional)"
             value={form.message}
             onChange={handleChange}
-            className="w-full border p-3 rounded-lg"
+            className="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-burgundy/30"
           />
 
           <button
