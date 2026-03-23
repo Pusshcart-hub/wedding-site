@@ -1,3 +1,4 @@
+import { useState } from "react";
 export default function App() {
 const [entered, setEntered] = useState(true);
 
