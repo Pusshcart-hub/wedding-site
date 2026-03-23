@@ -4,6 +4,7 @@ import Timeline from "./components/Timeline";
 import RSVP from "./components/RSVP";
 import Nav from "./components/Nav";
 import Venue from "./components/Venue";
+import Petals from "./components/Petals";
 
 export default function App() {
 return ( <div> <Hero /> 
