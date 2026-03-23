@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 
 export default function Intro({ onEnter }) {
-return (
+return ( <div className="fixed inset-0 z-50 bg-black text-white flex flex-col items-center justify-center text-center px-4">
 
-
-
+```
   <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
@@ -27,6 +26,7 @@ return (
   </motion.div>
 
 </div>
+```
 
 );
 }
