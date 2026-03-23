@@ -1,5 +1,5 @@
 export default function Story() {
-return ( <section id="story" className="py-20 px-4 text-center bg-cream"> <div className="max-w-2xl mx-auto">
+return ( <section id="story" className="py-24 px-4 text-center bg-cream"> <div className="max-w-2xl mx-auto">
 
 
     <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
