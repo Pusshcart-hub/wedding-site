@@ -64,33 +64,29 @@ try {
 };
 
 return (
+<section id="rsvp" className="py-24 px-4 bg-gray-50">
+    <FadeIn>
+      <div className="max-w-xl mx-auto text-center">
 
-
-
-
-
-      <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
-        Join Us
-      </p>
-
-      <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-10">
-        RSVP
-      </h2>
-
-      {/* ✅ Success message */}
-      {success && (
-        <p className="text-green-600 mb-6">
-          RSVP submitted successfully! 💌
+        <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
+          Join Us
         </p>
-      )}
 
-      {/* ✅ Form */}
-      {!success && (
-        <form
-          onSubmit={handleSubmit}
-          className="bg-white p-6 sm:p-8 rounded-2xl shadow-md space-y-4"
-        >
+        <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-10">
+          RSVP
+        </h2>
 
+        {success && (
+          <p className="text-green-600 mb-6">
+            RSVP submitted successfully! 💌
+          </p>
+        )}
+
+        {!success && (
+          <form
+            onSubmit={handleSubmit}
+            className="bg-white p-6 sm:p-8 rounded-2xl shadow-md space-y-4"
+          >
           <input
             type="text"
             name="name"
