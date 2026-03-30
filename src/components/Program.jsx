@@ -43,7 +43,7 @@ export default function Program() {
   ];
 
   return (
-    <section className="py-24 px-4">
+    <section id="program" className="py-24 px-4 text-center bg-cream py-24 px-4">
       <div className="max-w-3xl mx-auto">
         {/* HEADER */}
         <div className="bg-burgundy text-white px-6 py-4 rounded-t-xl font-serif text-lg">

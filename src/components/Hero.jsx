@@ -26,13 +26,13 @@ return () => clearInterval(interval);
 
 return (
 
-  <section className="relative min-h-screen pt-20 flex flex-col items-center justify-center text-center px-4 text-white overflow-hidden">
+  <section id="hero" className="relative min-h-screen pt-20 flex flex-col items-center justify-center text-center px-4 text-white overflow-hidden">
 
 {/* BACKGROUND IMAGE */}
 
   <div className="absolute inset-0 z-0">
     <img
-      src="/HeroImg.JPG"
+      src="/hero1.jpg"
       alt="Wedding"
       className="w-full h-full object-cover"
     />

@@ -4,55 +4,59 @@ import Timeline from "./components/Timeline";
 import RSVP from "./components/RSVP";
 import Nav from "./components/Nav";
 import Venue from "./components/Venue";
-import Petals from "./components/Petals"; // ✅ THIS LINE
+import Petals from "./components/Petals";
 import Music from "./components/Music";
 import Intro from "./components/Intro";
 import Program from "./components/Program";
 import DressCode from "./components/DressCode";
 import Rules from "./components/Rules";
 import Divider from "./components/Divider";
+import Transition from "./components/Transition";
 import { useState } from "react";
+
+// Stages: "intro" → "transition" → "site"
 export default function App() {
-const [entered, setEntered] = useState(false);
-const [startMusic, setStartMusic] = useState(false);
+  const [stage, setStage] = useState("intro");
 
-return (
-<>
-{!entered && <Intro onEnter={() => {
-  setEntered(true);
-  setStartMusic(true);
-}} />}
+  return (
+    <>
+      {stage === "intro" && (
+        <Intro onEnter={() => setStage("transition")} />
+      )}
 
-  <div className={entered ? "block" : "hidden"}>
-    <Petals />
-    <Music />
+      {stage === "transition" && (
+        <Transition onDone={() => setStage("site")} />
+      )}
 
-    <Hero />
-    <Divider/>
+      <div className={stage === "site" ? "block" : "hidden"}>
+        <Petals />
+        <Music />
 
-    <Story />
-    <Divider/>
+        <Hero />
+        <Divider />
 
-    <Timeline />
-    <Divider/>
+        <Story />
+        <Divider />
 
-    <Program />
-    <Divider/>
+        <Timeline />
+        <Divider />
 
-    <Venue />
-    <Divider/>
+        <Program />
+        <Divider />
 
-    <DressCode />
-    <Divider/>
+        <Venue />
+        <Divider />
 
-    <Rules />
-    <Divider/>
-    <RSVP />
+        <DressCode />
+        <Divider />
 
-    <Nav />
-  </div>
-</>
+        <Rules />
+        <Divider />
 
+        <RSVP />
 
-);
+        <Nav />
+      </div>
+    </>
+  );
 }

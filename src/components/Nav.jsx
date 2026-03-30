@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Home, Heart, Calendar, MapPin, Mail } from "lucide-react";
+import { Home, Heart, Calendar, MapPin, Mail, ScrollText } from "lucide-react";
 
 export default function Nav() {
 const [active, setActive] = useState("");
@@ -8,6 +8,7 @@ const links = [
 { id: "hero", icon: <Home size={18} /> },
 { id: "story", icon: <Heart size={18} /> },
 { id: "timeline", icon: <Calendar size={18} /> },
+{ id: "program", icon: <ScrollText size={18} /> },
 { id: "venue", icon: <MapPin size={18} /> },
 { id: "rsvp", icon: <Mail size={18} /> },
 
@@ -15,19 +16,21 @@ const links = [
 
 useEffect(() => {
 const handleScroll = () => {
-const sections = ["hero", "story", "timeline","venue", "rsvp"];
+const sections = ["hero", "story", "timeline","program","venue", "rsvp"];
 let current = "";
 
 
   sections.forEach((id) => {
     const el = document.getElementById(id);
     if (el) {
-      const top = el.offsetTop - 120;
-      if (window.scrollY >= top) {
-        current = id;
-      }
-    }
-  });
+      const rect = el.getBoundingClientRect();
+
+  if (rect.top <= 150 && rect.bottom >= 150) {
+    current = id;
+  }
+}
+
+});
 
   setActive(current);
 };
@@ -45,14 +48,15 @@ active === id
 
 return (
 <>
-{/* DESKTOP NAV */} <nav className="hidden md:flex fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b px-6 py-3 justify-between items-center">
+{/* DESKTOP NAV */} 
+<nav className="hidden md:flex fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur border-b px-6 py-3 justify-between items-center">
 
 
     <div className="font-serif text-burgundy">
       J & V
     </div>
 
-    <div className="flex gap-6">
+    <div className="flex gap-5">
       {links.map((link, i) => (
         <a
           key={i}
