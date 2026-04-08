@@ -35,7 +35,6 @@ viewport={{ once: true }}
 className="max-w-4xl mx-auto"
 >
 
-```
     <div className="text-center mb-12">
       <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
         Moments

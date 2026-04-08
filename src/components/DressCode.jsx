@@ -1,5 +1,7 @@
 export default function DressCode() {
-return ( <section className="py-24 px-4 bg-gray-50"> <div className="max-w-4xl mx-auto text-center">
+return ( <section className="py-24 px-4 bg-gray-50"> 
+
+<div className="max-w-4xl mx-auto text-center">
 
 
     <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
@@ -54,6 +56,7 @@ return ( <section className="py-24 px-4 bg-gray-50"> <div className="max-w-4xl m
 
     </div>
   </div>
+
 </section>
 
 );

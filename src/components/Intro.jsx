@@ -80,7 +80,7 @@ export default function Intro({ onEnter }) {
               animate={clicked ? { opacity: 0, scale: 0.5 } : { opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}
             >
-              <circle cx="110" cy="90" r="22" fill="#8b1a1a" stroke="#c9a96e" strokeWidth="1.5" />
+              <circle cx="110" cy="90" r="22" fill="#6B1A2A" stroke="#c9a96e" strokeWidth="1.5" />
               {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => {
                 const rad = (angle * Math.PI) / 180;
                 return (
