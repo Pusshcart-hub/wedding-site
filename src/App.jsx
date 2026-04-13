@@ -12,6 +12,7 @@ import DressCode from "./components/DressCode";
 import Rules from "./components/Rules";
 import Divider from "./components/Divider";
 import Transition from "./components/Transition";
+import Gallery from "./components/Gallery";
 import { useState } from "react";
 
 // Stages: "intro" → "transition" → "site"
@@ -42,6 +43,9 @@ export default function App() {
         <Divider />
 
         <Program />
+        <Divider />
+
+        <Gallery />
         <Divider />
 
         <Venue />

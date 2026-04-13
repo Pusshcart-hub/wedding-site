@@ -1,11 +1,12 @@
 export default function Rules() {
 const rules = [
-{ icon: "📵", title: "Unplugged Ceremony", desc: "Please keep phones away during ceremony." },
-{ icon: "👶", title: "Adults Only", desc: "Reception is for adults only." },
+{ icon: "📵", title: "Unplugged Ceremony", desc: "Please keep phones away during ceremony. You can take as many photos as you want after." },
+{ icon: "👶", title: "Adults Only", desc: "Unless stated on the message we have sent to you, this is an adult only ceremony and reception." },
+{ icon: "👫", title: "Companion", desc: "Unless stated on the message we have sent to you, the invitation is only for you." },
 { icon: "⏰", title: "Be On Time", desc: "Arrive 15 minutes early." },
-{ icon: "🥂", title: "Drink Responsibly", desc: "Please arrange safe transport." },
-{ icon: "🌿", title: "Eco-Friendly", desc: "No confetti or littering." },
-{ icon: "💌", title: "RSVP Deadline", desc: "Please RSVP on time." },
+{ icon: "🥂", title: "Drink Responsibly", desc: "Please arrange safe transport or accomodation." },
+{ icon: "🌿", title: "Eco-Friendly", desc: "No confetti or littering inside the church." },
+{ icon: "💌", title: "RSVP Deadline", desc: "Please RSVP on or before (date)." },
 ];
 
 return ( <section className="py-24 px-4 bg-burgundy text-white"> <div className="max-w-4xl mx-auto text-center">
