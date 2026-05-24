@@ -26,17 +26,17 @@ export default function Program() {
       desc: "Grand entrance of the newlyweds",
     },
     {
-      time: "6:30 PM",
+      time: "4:30 PM",
       title: "Dinner Service",
-      desc: "3-course plated dinner with toasts",
+      desc: "Buffet with Toasts",
     },
     {
-      time: "8:00 PM",
+      time: "5:00 PM",
       title: "First Dance & Cake Cutting",
       desc: "First dance as a married couple",
     },
     {
-      time: "8:30 PM",
+      time: "5:30 PM",
       title: "Open Dance Floor",
       desc: "Live band, photo booth, and fun",
     },

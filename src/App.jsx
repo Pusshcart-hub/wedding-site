@@ -39,9 +39,6 @@ export default function App() {
         <Story />
         <Divider />
 
-        <Timeline />
-        <Divider />
-
         <Program />
         <Divider />
 

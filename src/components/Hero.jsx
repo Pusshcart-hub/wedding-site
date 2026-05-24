@@ -35,9 +35,9 @@ export default function Hero() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero1.jpg"
+          src="/hero3.jpg"
           alt="Wedding"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-bottom"
         />
       </div>
 
