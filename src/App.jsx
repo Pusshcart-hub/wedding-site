@@ -7,6 +7,7 @@ import Venue from "./components/Venue";
 import Petals from "./components/Petals";
 import Music from "./components/Music";
 import Intro from "./components/Intro";
+import Intro2 from "./components/Intro_2";
 import Program from "./components/Program";
 import DressCode from "./components/DressCode";
 import Rules from "./components/Rules";
@@ -22,7 +23,7 @@ export default function App() {
   return (
     <>
       {stage === "intro" && (
-        <Intro onEnter={() => setStage("transition")} />
+        <Intro2 onEnter={() => setStage("transition")} />
       )}
 
       {stage === "transition" && (
