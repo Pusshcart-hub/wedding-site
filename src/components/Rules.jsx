@@ -16,7 +16,6 @@ const rules = [
 { icon: "🪑", title: "Will there be assigned seating at the reception?", desc: "Yes, place cards will be waiting for you at the reception. We've thoughtfully planned the seating to ensure you're seated with the people you know and enjoy celebrating with most."},
 { icon: "🎁", title: "Thinking of Giving a Gift?", desc: "The greatest gift is celebrating with you. For those who wish to give a little something extra, a monetary gift would be received with gratitude and love."},
 { icon: "🍷", title: "Will alcohol be served at the reception?", desc: "Absolutely! Our mobile bar will be ready to keep the drinks—and the good vibes—flowing. As we'll be celebrating at a church-affiliated venue, we simply ask everyone to sip responsibly and help us keep the atmosphere fun, respectful, and enjoyable for all."},
-{ icon: "👶", title: "Are Kids Allowed?", desc: "As much as we adore the little ones, this day is strictly for the grown-ups. Thank you for understanding!" }
 ];
 
 return ( <section className="py-24 px-4 bg-burgundy text-white"> <div className="max-w-4xl mx-auto text-center">
