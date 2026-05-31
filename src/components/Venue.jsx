@@ -13,7 +13,7 @@ export default function Venue() {
           <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-10">
             
           </h2>
-          <Typography as="h1" variant="sectionTitle" className="text-burgundy mb-4">Wedding Venue</Typography>
+          <Typography as="h1" variant="sectionTitle" className="text-burgundy mb-10">Wedding Venue</Typography>
 
           <div className="bg-cream rounded-2xl shadow-lg p-6 sm:p-10 mb-10">
              <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 text-left">

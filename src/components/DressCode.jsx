@@ -14,7 +14,7 @@ return ( <section className="py-24 px-4 bg-gray-50">
       Motif & Dress Code
     </h2>
 */}
- <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-burgundy mt-7 mb-7"> Motif & Dress Code</Typography>
+ <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-burgundy mt-7 mb-10"> Motif & Dress Code</Typography>
     <div className="grid sm:grid-cols-2 gap-6">
 
       {/* Motif */}
