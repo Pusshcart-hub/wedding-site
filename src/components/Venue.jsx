@@ -1,4 +1,6 @@
 import FadeIn from "./FadeIn";
+import Typography from "./Typography";
+
 export default function Venue() {
   return (
     <section id="venue" className="py-20 px-4 bg-white">
@@ -9,19 +11,21 @@ export default function Venue() {
           </p>
 
           <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-10">
-            Wedding Venue
+            
           </h2>
+          <Typography as="h1" variant="sectionTitle" className="text-burgundy mb-4">Wedding Venue</Typography>
 
           <div className="bg-cream rounded-2xl shadow-lg p-6 sm:p-10 mb-10">
+             <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 text-left">
+            Ceremony
+          </h2>
             <h3 className="text-xl sm:text-2xl font-serif text-burgundy mb-2">
               Santuario de San Vicente de Paul: Shrine of the Poor
             </h3>
             <p className="text-gray-600 mb-4">
               221 Tandang Sora Ave, Tandang Sora, Quezon City, 1116 Metro Manila
             </p>
-            <p className="text-gray-500 text-sm">
-              Ceremony and Reception will be held at the same location
-            </p>
+           
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="w-full sm:w-1/2 h-[250px] sm:h-[300px] rounded-xl overflow-hidden shadow-md">
                 <img
@@ -41,6 +45,15 @@ export default function Venue() {
                 ></iframe>
               </div>
             </div>{" "}
+            <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 mt-4 text-left">
+            Reception
+          </h2>
+          <h3 className="text-xl sm:text-2xl font-serif text-burgundy mb-2">
+              Bulwagang San Vicente
+            </h3>
+           <p className="text-gray-500 text-sm">
+              Dinner and dancing will be on the same location just behind the church
+            </p>
           </div>
         </div>
       </FadeIn>

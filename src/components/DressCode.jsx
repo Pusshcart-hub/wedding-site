@@ -1,3 +1,5 @@
+import Typography
+ from "./Typography";
 export default function DressCode() {
 return ( <section className="py-24 px-4 bg-gray-50"> 
 
@@ -7,11 +9,12 @@ return ( <section className="py-24 px-4 bg-gray-50">
     <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
       Look & Feel
     </p>
-
+{/* 
     <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-10">
       Motif & Dress Code
     </h2>
-
+*/}
+ <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-burgundy mt-7 mb-7"> Motif & Dress Code</Typography>
     <div className="grid sm:grid-cols-2 gap-6">
 
       {/* Motif */}

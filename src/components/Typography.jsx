@@ -2,6 +2,7 @@ const variants = {
   // Amalfi Coast — couple names, hero text
   names:   'font-script text-3xl md:text-5xl font-normal leading-tight',
   names2xl: 'font-script text-1xl md:text-2xl font-normal leading-tight',
+  sectionTitle: 'font-script text-2xl md:text-3xl font-normal leading-tight',
 
   // Champagne Limousines — section headings, labels
   heading: 'font-elegant text-2xl md:text-4xl tracking-widest',
