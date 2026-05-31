@@ -2,37 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-font-family: 'Jost', sans-serif;
-background-color: #FAF5F0;
-color: #2D1B3D;
+/* ── Self-hosted custom fonts ── */
+@font-face {
+  font-family: 'Amalfi Coast';
+  src: url('/fonts/AmalfiCoast.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-h1, h2, h3 {
-font-family: 'Cormorant Garamond', serif;
+@font-face {
+  font-family: 'Champagne Limousines';
+  src: url('/fonts/ChampagneLimousines.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-html {
-scroll-behavior: smooth;
+
+@font-face {
+  font-family: 'Champagne Limousines';
+  src: url('/fonts/ChampagneLimousinesBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Champagne Limousines';
+  src: url('/fonts/ChampagneLimousinesItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Champagne Limousines';
+  src: url('/fonts/ChampagneLimousinesBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ── Base styles ── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background-color: #FAF5F0;
+    color: #2D1B3D;
+  }
+/*
+  h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+  }*/
+}
+
+/* ── Animations ── */
 @keyframes float {
-0% {
-transform: translateY(-10vh) translateX(0);
-opacity: 0;
-}
-10% {
-opacity: 0.7;
-}
-100% {
-transform: translateY(110vh) translateX(50px);
-opacity: 0;
-}
+  0% {
+    transform: translateY(-10vh) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(110vh) translateX(50px);
+    opacity: 0;
+  }
 }
 
-.animate-float {
-animation-name: float;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
-}
 @keyframes fall {
   0% {
     transform: translateY(-10vh) rotate(0deg);
@@ -45,4 +87,10 @@ animation-iteration-count: infinite;
     transform: translateY(110vh) rotate(360deg);
     opacity: 0;
   }
+}
+
+.animate-float {
+  animation-name: float;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Typography from "/src/components/Typography";
 
 export default function Hero() {
   const [time, setTime] = useState({ d: 0, h: 0, m: 0, s: 0 });
@@ -51,17 +52,20 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
+          {/*
           <p className="uppercase tracking-[0.3em] text-xs text-gray-300 mb-4">
-            Together Forever
-          </p>
-
+            The Wedding
+          </p> */}
+          <Typography as="p" variant="names" className="mb-5 leading-none">the wedding</Typography>
+          {/*
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-light mb-4 drop-shadow-[0_2px_10px_rgba(255,215,0,0.3)]">
             Joanna <span className="text-gold italic">&</span> Vincent
-          </h1>
-
+          </h1> */}
+          <Typography as="p" variant="heading">Joanna <span className="text-gold italic">&</span> Vincent</Typography>
           <p className="text-lg sm:text-xl text-gray-300 mb-8 italic">
             October 17, 2026
           </p>
+           <Typography as="p" variant="headingU" className="mb-5">Forever Starts soon</Typography>
         </motion.div>
 
         {/* COUNTDOWN */}
@@ -100,13 +104,15 @@ export default function Hero() {
   transition={{ delay: 1, duration: 1 }}
   className="mt-8"
 >
+  <Typography as="h3" variant="note" className="mb-5">Kindly RSVP on or before September 1, 2026, to ensure your spot on our special day</Typography>
   <a
     href="#rsvp"
     className="px-8 py-3 bg-burgundy text-white rounded-full text-sm tracking-widest uppercase hover:bg-burgundy/80 transition duration-300 shadow-lg"
   >
-    RSVP
+    RSVP Here
   </a>
 </motion.div>
+
       </div>
     </section>
   );

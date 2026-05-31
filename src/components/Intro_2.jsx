@@ -208,9 +208,9 @@ export default function Intro_2({ onEnter }) {
               width: "81%", height: "100%",
               zIndex: 7,
               pointerEvents: "none",
-              transformOrigin: "top center",
+              transformOrigin: "left center",
             }}
-            animate={clicked ? { rotateX: 180, opacity: 0 } : { rotateX: 0, opacity: 1 }}
+            animate={clicked ? { rotateY: 180, opacity: 0 } : { rotateX: 0, opacity: 1 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
             <img

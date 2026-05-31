@@ -1,83 +1,92 @@
-export default function Program() {
-  const events = [
-    {
-      time: "12:30 PM",
-      title: "Guest Arrival & Seating",
-      desc: "Santuario de San Vicente de Paul",
-    },
-    {
-      time: "1:30 PM",
-      title: "Wedding Ceremony",
-      desc: "Exchange of vows & rings, Unity candle lighting",
-    },
-    {
-      time: "2:30 PM",
-      title: "Photo Session",
-      desc: "Bridal party and family portraits",
-    },
-    {
-      time: "3:00 PM",
-      title: "Cocktail Hour",
-      desc: "Drinks & Foods",
-    },
-    {
-      time: "3:15 PM",
-      title: "Place cards and seating",
-      desc: "Grand entrance of the newlyweds",
-    },
-    {
-      time: "4:30 PM",
-      title: "Dinner Service",
-      desc: "Buffet with Toasts",
-    },
-    {
-      time: "5:00 PM",
-      title: "First Dance & Cake Cutting",
-      desc: "First dance as a married couple",
-    },
-    {
-      time: "5:30 PM",
-      title: "Open Dance Floor",
-      desc: "Live band, photo booth, and fun",
-    },
-  ];
+import Typography from "./Typography";
 
+const events = [
+  { date: "Oct 17", time: "12:30 PM", title: "Guest Arrival & Seating", desc: "Santuario de San Vicente de Paul" },
+  { date: "Oct 17", time: "1:30 PM", title: "Wedding Ceremony", desc: "Exchange of vows & rings, Unity candle lighting" },
+  { date: "Oct 17", time: "2:30 PM", title: "Photo Session", desc: "Bridal party and family portraits" },
+  { date: "Oct 17", time: "3:00 PM", title: "Cocktail Hour", desc: "Drinks & Foods" },
+  { date: "Oct 17", time: "3:15 PM", title: "Place Cards & Seating", desc: "Grand entrance of the newlyweds" },
+  { date: "Oct 17", time: "4:30 PM", title: "Dinner Service", desc: "Buffet with Toasts" },
+  { date: "Oct 17", time: "5:00 PM", title: "First Dance & Cake Cutting", desc: "First dance as a married couple" },
+  { date: "Oct 17", time: "5:30 PM", title: "Open Dance Floor", desc: "Live band, photo booth, and fun" },
+];
+
+export default function Program() {
   return (
-    <section id="program" className="py-24 px-4 text-center bg-cream">
-      <div className="max-w-3xl mx-auto">
+    <section
+      id="program"
+      className="py-24 px-4 flex flex-col justify-center items-center bg-[#f9f4f0] min-h-screen"
+    >
+      {/* ARCH — decorative cap only, no content */}
+      <div
+        style={{
+          width: "210px",
+          height: "105px",
+          background: "#fff",
+          borderRadius: "1000px 1000px 24px 24px",
+        }}
+      />
+
+      {/* MAIN CARD — rectangle */}
+      <div
+        className="w-full pb-9"
+        style={{  
+          maxWidth: "420px",
+          background: "#fff",
+        }}
+      >
         {/* HEADER */}
-        <div className="bg-burgundy text-white px-6 py-4 rounded-t-xl font-serif text-lg">
-          October 17, 2026 — Full Day Programme
+        <div className="text-center px-6 pt-6 pb-4">
+          <Typography variant="label" className="text-[#c4897a] mb-1">
+            October 17, 2026
+          </Typography>
+          <Typography
+            as="p"
+            variant="subHeader"
+            className="!text-[#3a2a25] text-xs leading-snug mt-1 mb-2"
+          >
+            The Wedding Day
+            <br />
+            Schedule
+          </Typography>
+          <Typography variant="names2xl" className="!text-burgundy mt-1">
+            Saturday
+          </Typography>
         </div>
 
-        {/* LIST */}
-        <div className="overflow-hidden rounded-b-xl shadow-md">
+        {/* TIMELINE */}
+        <div className="px-8 pt-6">
           {events.map((event, i) => (
-            <div
-              key={i}
-              className={`flex gap-6 px-6 py-5 border-b border-gray-300/50 hover:bg-rose-50 transition duration-300 ${
-                i % 2 === 0 ? "bg-gray-100" : "bg-gray-50"
-              }`}
-            >
-              {/* TIMELINE INDICATOR */}
-              <div className="flex flex-col items-center">
-                <div className="w-2 h-2 bg-burgundy rounded-full z-10"></div>
-                {/* LINE (not for last item) */}
+            <div key={i} className="flex items-start gap-4">
+
+              {/* DATE + TIME */}
+              <div className="w-16 shrink-0 text-right pt-0.5">
+                <Typography as="span" variant="timeStamp" className="block text-[#9b7060] text-[11px] not-italic tracking-wide">
+                  {event.date}
+                </Typography>
+                <Typography as="span" variant="timeStamp" className="block text-[#9b7060] text-[11px] not-italic tracking-wide">
+                  {event.time}
+                </Typography>
+              </div>
+
+              {/* DOT + STEM */}
+              <div className="flex flex-col items-center w-4 shrink-0">
+                <div className="w-2 h-2 rounded-full mt-1 shrink-0" style={{ background: "#c4897a" }} />
                 {i !== events.length - 1 && (
-                  <div className="w-[2px] flex-1 bg-gray-300"></div>
+                  <div className="flex-1" style={{ width: "1.5px", minHeight: "36px", background: "#e8d5cc", margin: "4px 0" }} />
                 )}
               </div>
 
-              {/* TIME */}
-              <div className="w-24 text-burgundy font-semibold">
-                {event.time}
+              {/* CONTENT */}
+              <div className={i !== events.length - 1 ? "pb-4 pt-0.5" : "pt-0.5"}>
+                <Typography variant="eventTitle" className="text-[#3a2a25] text-[14px] font-semibold mb-0.5 not-italic">
+                  {event.title}
+                </Typography>
+                <Typography variant="note" className="text-[#a08070] text-[12px]">
+                  {event.desc}
+                </Typography>
               </div>
 
-              {/* DETAILS */}
-              <div>
-                <h4 className="font-medium text-gray-900">{event.title}</h4>
-                <p className="text-sm text-gray-500 mt-1">{event.desc}</p>
-              </div>
             </div>
           ))}
         </div>

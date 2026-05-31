@@ -43,9 +43,6 @@ export default function App() {
         <Program />
         <Divider />
 
-        <Gallery />
-        <Divider />
-
         <Venue />
         <Divider />
 
