@@ -56,16 +56,17 @@ export default function Hero() {
           <p className="uppercase tracking-[0.3em] text-xs text-gray-300 mb-4">
             The Wedding
           </p> */}
-          <Typography as="p" variant="names" className="mb-5 leading-none">the wedding</Typography>
+          <Typography as="p" variant="names" className="mb-9 leading-none">the wedding</Typography>
           {/*
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-light mb-4 drop-shadow-[0_2px_10px_rgba(255,215,0,0.3)]">
             Joanna <span className="text-gold italic">&</span> Vincent
           </h1> */}
-          <Typography as="p" variant="heading">Joanna <span className="text-gold italic">&</span> Vincent</Typography>
-          <p className="text-lg sm:text-xl text-gray-300 mb-8 italic">
+          <Typography as="p" variant="label" className="mb-4">Joanna <span className="text-gold italic">&</span> Vincent</Typography>
+          <Typography as="p" variant="label2" className="mb-10" >OCTOBER 17, 2026</Typography>
+          {/*<p className="text-lg sm:text-xl text-gray-300 mb-8 italic">
             October 17, 2026
-          </p>
-           <Typography as="p" variant="headingU" className="mb-5">Forever Starts soon</Typography>
+          </p>*/}
+           <Typography as="p" variant="heading" className="mb-5">FOREVER STARTS SOON</Typography>
         </motion.div>
 
         {/* COUNTDOWN */}

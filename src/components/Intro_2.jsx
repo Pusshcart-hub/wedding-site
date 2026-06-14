@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Typography from "./Typography";
 
 export default function Intro_2({ onEnter }) {
   const [clicked, setClicked] = useState(false);
@@ -110,11 +111,7 @@ export default function Intro_2({ onEnter }) {
             <div className="placeholder" style={{ width: "30%", aspectRatio: "5/6", borderRadius: 2, flexShrink: 0 }}>stamp</div>
             <div className="placeholder" style={{ width: "30%", aspectRatio: "5/6", borderRadius: 2, flexShrink: 0 }}>stamp</div>
           </div>
-          <p style={{
-            fontFamily: "'Great Vibes', cursive",
-            fontSize: "clamp(20px, 5vw, 38px)",
-            color: "#4a1020", margin: 0, lineHeight: 1.2,
-          }}>Dear Guests</p>
+          <Typography as="p" variant="sectionTitle" className="text-burgundy mb-4">A warm welcome to our dearest guests</Typography>
         </div>
 
         {/* 3. CALLA LILY — between top cards */}
@@ -144,7 +141,7 @@ export default function Intro_2({ onEnter }) {
             zIndex: 5, overflow: "hidden",
           }}>
             <img
-              src="/intro_envelopeFull5.png"
+              src="/intro_envelopeFull9.png"
               style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
               alt="envelope"
             />
@@ -167,29 +164,18 @@ export default function Intro_2({ onEnter }) {
             />
             <div style={{ position: "absolute", inset: 0, background: "rgba(80, 10, 20, 0.45)" }} />
             <div style={{ position: "relative", zIndex: 1, padding: "6% 5% 7%" }}>
-              <p style={{
-                fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "clamp(14px, 3.5vw, 26px)",
-                fontWeight: 700, letterSpacing: "0.08em",
-                color: "#fff", textTransform: "uppercase",
-                textAlign: "center", margin: "0 0 1%",
-              }}>
-                JOANNA{" "}
-                <span style={{ fontStyle: "italic", fontWeight: 400, fontSize: "clamp(11px, 2.8vw, 20px)", textTransform: "none" }}>and</span>
-              </p>
-              <p style={{
-                fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "clamp(14px, 3.5vw, 26px)",
-                fontWeight: 700, letterSpacing: "0.08em",
-                color: "#fff", textTransform: "uppercase",
-                textAlign: "center", margin: "0 0 5%",
-              }}>VICENNT</p>
 
-              <div style={{ textAlign: "center", marginBottom: "4%" }}>
-                <p style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(12px, 2.5vw, 20px)", color: "rgba(255,255,255,0.9)", margin: "0 0 2px" }}>to wed</p>
-                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(13px, 3vw, 24px)", fontWeight: 700, fontStyle: "italic", color: "#fff", margin: 0, letterSpacing: "0.04em" }}>10.17.26</p>
-              </div>
-
+              {/* ── NAMES using Typography ── */}
+              <Typography as="p" variant="sectionTitle" className="!text-[clamp(14px,3.5vw,26px)] text-white text-center mb-2 mt-5 leading-none">
+                Joanna     
+              </Typography>
+              <Typography as="p" variant="names" className="!text-[clamp(11px,2.8vw,20px)] text-white/80 text-center mb-2">
+                and
+              </Typography>
+              <Typography as="p" variant="sectionTitle" className="!text-[clamp(14px,3.5vw,26px)] text-white text-center mb-10 leading-none">
+                Vincent
+              </Typography>
+            
               <p style={{
                 fontFamily: "'Cormorant Garamond', serif",
                 fontSize: "clamp(7px, 1.2vw, 11px)",
@@ -197,6 +183,37 @@ export default function Intro_2({ onEnter }) {
                 textTransform: "uppercase", color: "rgba(255,255,255,0.8)",
                 textAlign: "center", margin: 0,
               }}>Save Our Date</p>
+               <Typography as="p" variant="names" className="!text-[clamp(14px,3.5vw,26px)] text-white text-center mb-2 leading-none"></Typography>
+              <div style={{ textAlign: "center", marginBottom: "4%" }}>
+                
+               {/* <p style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(12px, 2.5vw, 20px)", color: "rgba(255,255,255,0.9)", margin: "0 0 2px" }}>the beginning of our "happily ever after"</p>
+                 */}<p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(13px, 3vw, 24px)", fontWeight: 700, fontStyle: "italic", color: "#fff", margin: 0, letterSpacing: "0.04em" }}>10.17.26</p>
+             
+             <div style={{ 
+  position: "absolute", 
+  top: "150%", 
+  left: 0, 
+  right: 0, 
+  textAlign: "center" 
+}}>
+             <p style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                fontSize: "clamp(7px, 1.2vw, 11px)",
+                fontWeight: 600, letterSpacing: "0.28em",
+                textTransform: "uppercase", color: "rgba(255,255,255,0.8)",
+                textAlign: "center", margin: 0,
+              }}>the beginning of our</p>
+              <p style={{
+                fontFamily: "'Cormorant Garamond', serif",
+                fontSize: "clamp(7px, 1.2vw, 11px)",
+                fontWeight: 600, letterSpacing: "0.28em",
+                textTransform: "uppercase", color: "rgba(255,255,255,0.8)",
+                textAlign: "center", margin: 0,
+              }}>"happily ever after"</p>
+             </div>
+              </div>
+
+              
             </div>
           </div>
 

@@ -52,7 +52,7 @@ export default function Venue() {
               Bulwagang San Vicente
             </h3>
            <p className="text-gray-500 text-sm">
-              Dinner and dancing will be on the same location just behind the church
+              Dinner and dancing to follow at Bulwagang San Vicente (Same location)
             </p>
           </div>
         </div>

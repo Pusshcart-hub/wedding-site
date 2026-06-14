@@ -7,6 +7,7 @@ const variants = {
   // Champagne Limousines — section headings, labels
   heading: 'font-elegant text-2xl md:text-4xl tracking-widest',
   label:   'font-elegant text-xs md:text-sm tracking-[0.3em] uppercase',
+  label2:   'font-elegant text-xs md:text-sm tracking-[0.3em]',
   headingU:  'font-elegant text-2xl md:text-4xl tracking-tight uppercase', 
   note: 'font-elegant text-sm md:text-base tracking-tight italic',
   subHeader: 'font-elegant text-sm md:text-base tracking-tight uppercase',

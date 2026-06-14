@@ -29,9 +29,11 @@ export default function App() {
       {stage === "transition" && (
         <Transition onDone={() => setStage("site")} />
       )}
-
-      <div className={stage === "site" ? "block" : "hidden"}>
-        <Petals />
+ 
+      <div className={stage === "site" ? "block" : "hidden"}
+      style={{zoom: 'clamp(0.85, 1.2vw, 1.1'}}>
+       {/* <Petals />
+        */}
         <Music />
 
         <Hero />
