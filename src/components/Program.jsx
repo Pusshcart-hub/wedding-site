@@ -7,7 +7,7 @@ const events = [
   { date: "Oct 17", time: "3:00 PM", title: "Cocktail Hour & Socials", desc: "Drinks & Foods" },
   { date: "Oct 17", time: "3:15 PM", title: "Place Cards & Seating", desc: "Grand entrance of the newlyweds" },
   { date: "Oct 17", time: "4:15 PM", title: "Dinner Service", desc: "Buffet with Toasts" },
-  { date: "Oct 17", time: "4:30 PM", title: "Program & Dinner", desc: "Games, Parents Dance, Messages" },
+  { date: "Oct 17", time: "4:30 PM", title: "Program", desc: "Games, Parents Dance" },
 ];
 
 export default function Program() {
