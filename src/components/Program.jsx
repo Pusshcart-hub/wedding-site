@@ -2,13 +2,12 @@ import Typography from "./Typography";
 
 const events = [
   { date: "Oct 17", time: "12:30 PM", title: "Guest Arrival & Seating", desc: "Santuario de San Vicente de Paul" },
-  { date: "Oct 17", time: "1:30 PM", title: "Wedding Ceremony", desc: "Exchange of vows & rings, Unity candle lighting" },
+  { date: "Oct 17", time: "1:15 PM", title: "Wedding Ceremony", desc: "Exchange of vows & rings, Unity candle lighting" },
   { date: "Oct 17", time: "2:30 PM", title: "Photo Session", desc: "Bridal party and family portraits" },
-  { date: "Oct 17", time: "3:00 PM", title: "Cocktail Hour", desc: "Drinks & Foods" },
+  { date: "Oct 17", time: "3:00 PM", title: "Cocktail Hour & Socials", desc: "Drinks & Foods" },
   { date: "Oct 17", time: "3:15 PM", title: "Place Cards & Seating", desc: "Grand entrance of the newlyweds" },
-  { date: "Oct 17", time: "4:30 PM", title: "Dinner Service", desc: "Buffet with Toasts" },
-  { date: "Oct 17", time: "5:00 PM", title: "First Dance & Cake Cutting", desc: "First dance as a married couple" },
-  { date: "Oct 17", time: "5:30 PM", title: "Open Dance Floor", desc: "Live band, photo booth, and fun" },
+  { date: "Oct 17", time: "4:15 PM", title: "Dinner Service", desc: "Buffet with Toasts" },
+  { date: "Oct 17", time: "4:30 PM", title: "Program & Dinner", desc: "Games, Parents Dance, Messages" },
 ];
 
 export default function Program() {

@@ -227,6 +227,7 @@ export default function Intro_2({ onEnter }) {
               pointerEvents: "none",
               transformOrigin: "left center",
             }}
+            
             animate={clicked ? { rotateY: 180, opacity: 0 } : { rotateX: 0, opacity: 1 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
@@ -245,15 +246,16 @@ export default function Intro_2({ onEnter }) {
           position: "absolute",
           top: "65%", left: "2%",
           width: "27%", aspectRatio: "3/4",
-          background: "#7c1d2e",
+          
           borderRadius: "2%",
           zIndex: 5,
-          boxShadow: "0 4px 16px rgba(40,0,10,0.3)",
           display: "flex", alignItems: "center", justifyContent: "center",
         }}>
-          <div className="placeholder" style={{ width: "100%", height: "100%", borderRadius: "2%" }}>
-            S N monogram
-          </div>
+          <img
+              src="/jv_mono.png"
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+              alt=""
+            />
         </div>
 
       </div>

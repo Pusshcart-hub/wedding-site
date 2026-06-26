@@ -10,7 +10,7 @@ export default function Story() {
             Our Story
           </p>
 
- <Typography as="p" variant="names" className="!text-3xl sm:text-4xl text-burgundy mt-4"> How It All Began</Typography>
+ <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-burgundy mt-4"> How It All Began</Typography>
           {/* Photo Collage */}
           <div className="relative mx-auto mb-12" style={{ width: '100%', maxWidth: 700, height: 570 }}>
 
