@@ -6,7 +6,7 @@ export default function Hero() {
   const [time, setTime] = useState({ d: 0, h: 0, m: 0, s: 0 });
   const [expired, setExpired] = useState(false);
 
-  useEffect(() => {
+    useEffect(() => {
     const interval = setInterval(() => {
       const target = new Date("2026-10-17T12:00:00");
       const now = new Date();
@@ -36,7 +36,7 @@ export default function Hero() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero3.jpg"
+          src="/herobg.png"
           alt="Wedding"
           className="w-full h-full object-cover object-bottom"
         />
@@ -46,27 +46,18 @@ export default function Hero() {
       <div className="absolute inset-0 bg-burgundy/40 z-0"></div>
 
       {/* CONTENT */}
-      <div className="relative z-10 flex flex-col items-center">
+      <div className="relative z-10 flex flex-col items-center w-full max-w-5xl">
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
+          className="flex flex-col items-center"
         >
-          {/*
-          <p className="uppercase tracking-[0.3em] text-xs text-gray-300 mb-4">
-            The Wedding
-          </p> */}
           <Typography as="p" variant="names" className="mb-9 leading-none">the wedding</Typography>
-          {/*
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-light mb-4 drop-shadow-[0_2px_10px_rgba(255,215,0,0.3)]">
-            Joanna <span className="text-gold italic">&</span> Vincent
-          </h1> */}
           <Typography as="p" variant="label" className="mb-4">Joanna <span className="text-gold italic">&</span> Vincent</Typography>
-          <Typography as="p" variant="label2" className="mb-10" >OCTOBER 17, 2026</Typography>
-          {/*<p className="text-lg sm:text-xl text-gray-300 mb-8 italic">
-            October 17, 2026
-          </p>*/}
-           <Typography as="p" variant="heading" className="mb-5">FOREVER STARTS SOON</Typography>
+          <Typography as="p" variant="label2" className="mb-10">OCTOBER 17, 2026</Typography>
+          <Typography as="p" variant="heading" className="mb-5">FOREVER STARTS SOON</Typography>
         </motion.div>
 
         {/* COUNTDOWN */}
@@ -99,13 +90,17 @@ export default function Hero() {
             ))
           )}
         </motion.div>
+
+        {/* RSVP — pushed to the left */}
         <motion.div
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ delay: 1, duration: 1 }}
-  className="mt-8"
->
-  <Typography as="h3" variant="note" className="mb-5">Kindly RSVP on or before September 1, 2026, to ensure your spot on our special day</Typography>
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 1 }}
+          className="mt-8 w-full text-left pl-8 sm:pl-16"
+        >
+          <Typography as="h3" variant="note" className="mb-5 max-w-sm">
+            Kindly RSVP on or before September 1, 2026, to ensure your spot on our special day
+          </Typography>
   <a
     href="#rsvp"
     className="px-8 py-3 bg-burgundy text-white rounded-full text-sm tracking-widest uppercase hover:bg-burgundy/80 transition duration-300 shadow-lg"
