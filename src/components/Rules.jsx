@@ -39,7 +39,7 @@ return ( <section className="py-24 px-4 bg-burgundy text-white"> <div className=
     <h4 className="font-semibold">
       {rule.title}
     </h4>
-
+<Typography as="h3" variant="contextHead">{rule.title}</Typography>
     <p className="text-sm text-white/80 mt-1">
       {rule.desc}
     </p>

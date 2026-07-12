@@ -64,7 +64,7 @@ export default function RSVP() {
   };
 
   return (
-    <section id="rsvp" className="py-24 px-4 bg-gray-50">
+    <section id="rsvp" className="py-24 px-4 bg-blush">
       <FadeIn>
         <div className="max-w-xl mx-auto text-center">
 

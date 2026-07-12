@@ -93,35 +93,29 @@ export default function Hero() {
 
       </div>
 
-      {/* RSVP BLOCK — separate partition, left-aligned */}
-      <div className="relative z-10 w-full max-w-5xl flex flex-col items-left text-center pl-6 sm:pl-16 mt-10">
+      {/* RSVP BLOCK */}
+<div className="relative z-10 w-full max-w-5xl mt-10">
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    className="max-w-sm ml-6 sm:ml-16 text-center"
+  >
+    <Typography as="h3" variant="note">
+      Kindly RSVP on or before September 1, 2026, to ensure your spot on our special day
+    </Typography>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0, duration: 1 }}
-        >
-          <Typography as="h3" variant="note" className="max-w-sm">
-            Kindly RSVP on or before September 10, 2026, to ensure your spot on our special day
-          </Typography>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 1 }}
-          className="mt-4"
-        >
-          <a
-            href="#rsvp"
-            className="px-8 py-3 bg-gold text-white rounded-full text-sm tracking-widest uppercase hover:bg-gold/80 transition duration-300 shadow-lg"
-          >
-            RSVP Here
-          </a>
-        </motion.div>
-
-      </div>
-
+    <motion.a
+      href="#rsvp"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 1 }}
+      className="inline-block mt-3 px-8 py-3 bg-gold text-white rounded-full text-sm tracking-widest uppercase hover:bg-gold/80 transition duration-300 shadow-lg"
+    >
+      RSVP Here
+    </motion.a>
+  </motion.div>
+</div>
     </section>
   );
 }

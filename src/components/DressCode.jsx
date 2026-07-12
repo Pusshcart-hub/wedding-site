@@ -36,18 +36,23 @@ export default function DressCode() {
               Our Theme
             </h3>
             <p className="italic text-gray-700 mb-3">
-              Modern Romantic Elegance
+              <Typography as="h3" variant="contextHead">Modern Romantic Elegance</Typography>
             </p>
             <p className="text-sm text-gray-500">
-              We encourage our guests to dress according to the color palette below
+             <Typography as="h3" variant="context"> We encourage our guests to dress according to the color palette below</Typography>
             </p>
 
-            <div className="flex justify-center gap-2 mt-4">
-              <div className="w-6 h-6 rounded-full bg-[#6B1A2A]" />
+            <div className="flex justify-center gap-2 mt-2">
+            {/* <div className="w-6 h-6 rounded-full bg-[#6B1A2A]" />
               <div className="w-6 h-6 rounded-full bg-[#2D1B3D]" />
               <div className="w-6 h-6 rounded-full bg-[#C4857A]" />
               <div className="w-6 h-6 rounded-full bg-[#E8C5BC]" />
-              <div className="w-6 h-6 rounded-full bg-[#C9A96E]" />
+              <div className="w-6 h-6 rounded-full bg-[#C9A96E]" /> */} 
+               <img
+    src="/dressShades.png"
+    alt="Color Palette"
+    className="h-16 object-contain"
+  />
             </div>
           </div>
 
@@ -58,13 +63,13 @@ export default function DressCode() {
               Dress Code
             </h3>
             <p className="italic text-gray-700 mb-3">
-              Formal / Black Tie
+              <Typography as="h3" variant="contextHead">Formal / Black Tie</Typography>
             </p>
 
             <ul className="text-sm text-gray-600 space-y-2 text-left">
-              <li>✦ Ladies: Floor-length gown or a dress that falls below the knee</li>
-              <li>✦ Gentlemen: Suit or long sleeves with slacks</li>
-              <li className="italic" mt-1 text-center>(Please try to avoid white in your attire)</li>
+              <li><Typography as="h3" variant="context">✦ Ladies: Floor-length gown or a dress that falls below the knee </Typography></li>
+              <li><Typography as="h3" variant="context">✦ Gentlemen: Suit or long sleeves with slacks</Typography></li>
+              <li className="italic" mt-0 text-center><Typography as="h3" variant="context">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Please try to avoid white in your attire)</Typography></li>
             </ul>
           </div>
 

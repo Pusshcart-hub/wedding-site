@@ -12,18 +12,20 @@ export default function Story() {
           className="w-full h-full object-cover"
         />
       </div>
-      
+
+      {/* OVERLAY — improves text readability over the image */}
+      <div className="absolute inset-0 bg-white/20 z-0"></div>
 
       <FadeIn>
-        <div className="max-w-2xl mx-auto">
+        <div className="relative z-10 max-w-2xl mx-auto">
 
-          <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-9">
+          <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-9 text-center">
             Our Story
           </p>
 
- <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-burgundy mt-4"> How It All Began</Typography>
+ <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-burgundy mt-4 text-center"> How It All Began</Typography>
           {/* Photo Collage */}
-          <div className="relative mx-auto mb-12" style={{ width: '100%', maxWidth: 700, height: 570 }}>
+          <div className="relative mx-auto mb-12" style={{ width: '100%', maxWidth: 700, height: 400 }}>
 
   {/* Main center photo */}
   <div
@@ -35,18 +37,18 @@ export default function Story() {
 
   {/* Left photo — grayscale, slightly rotated */}
   <div
-    className="absolute rounded-sm overflow-hidden shadow-lg grayscale"
-    style={{ width: '35%', height: 255, left: '2%', top: 120, zIndex: 3, transform: 'rotate(-4deg)' }}
-  >
-    <img src="/gall2.jpg" alt="A quiet moment" className="w-full h-full object-cover" />
-  </div>
+  className="absolute rounded-sm overflow-hidden shadow-lg"
+  style={{ width: '28%', aspectRatio: '3 / 4', left: '2%', top: 150, zIndex: 3, transform: 'rotate(-4deg)' }}
+>
+  <img src="/storyLeft.jpg" alt="A quiet moment" className="w-full h-full object-cover" />
+</div>
 
   {/* Right photo — behind main */}
   <div
     className="absolute rounded-sm overflow-hidden shadow-lg"
-    style={{ width: '30%', height: 210, right: '2%', top: 45, zIndex: 3, transform: 'rotate(3deg)' }}
+    style={{ width: '28%', aspectRatio: '3 / 4', right: '2%', top: 45, zIndex: 3, transform: 'rotate(3deg)' }}
   >
-    <img src="/gall9.jpg" alt="Smiling together" className="w-full h-full object-cover" />
+    <img src="/storyRight.jpg" alt="Smiling together" className="w-full h-full object-cover" />
   </div>
 
 </div>
