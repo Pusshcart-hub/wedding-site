@@ -2,7 +2,18 @@ import FadeIn from "./FadeIn";
 import Typography from "./Typography";
 export default function Story() {
   return (
-    <section id="story" className="py-24 px-4 text-center bg-cream">
+  <section className="relative overflow-hidden py-24 px-4">
+
+      {/* BACKGROUND IMAGE */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/storybg.png"
+          alt="Dress Code Background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+
       <FadeIn>
         <div className="max-w-2xl mx-auto">
 

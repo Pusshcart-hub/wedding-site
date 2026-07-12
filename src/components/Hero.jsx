@@ -102,7 +102,7 @@ export default function Hero() {
           transition={{ delay: 0, duration: 1 }}
         >
           <Typography as="h3" variant="note" className="max-w-sm">
-            Kindly RSVP on or before September 1, 2026, to ensure your spot on our special day
+            Kindly RSVP on or before September 10, 2026, to ensure your spot on our special day
           </Typography>
         </motion.div>
 
