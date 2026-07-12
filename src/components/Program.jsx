@@ -10,28 +10,36 @@ const events = [
 
 export default function Program() {
   return (
-    <section
-      id="program"
-      className="py-24 px-4 flex flex-col justify-center items-center bg-[#f9f4f0] min-h-screen"
-    >
-      {/* ARCH — decorative cap only, no content */}
-      <div
-        style={{
-          width: "210px",
-          height: "105px",
-          background: "#fff",
-          borderRadius: "1000px 1000px 24px 24px",
-        }}
+  <section
+  id="program"
+  className="relative overflow-hidden py-24 px-4 flex flex-col justify-center items-center min-h-screen">
+    <div className="absolute inset-0 z-0">
+      <img
+        src="/programbg.png"
+        alt="Wedding"
+        className="w-full h-full object-cover object-bottom"
       />
+    </div>
+      
+     {/* ARCH */}
+    <div
+      className="relative z-10"
+      style={{
+        width: "210px",
+        height: "105px",
+        background: "#fff",
+        borderRadius: "1000px 1000px 24px 24px",
+      }}
+    />
 
-      {/* MAIN CARD — rectangle */}
-      <div
-        className="w-full pb-9"
-        style={{  
-          maxWidth: "420px",
-          background: "#fff",
-        }}
-      >
+      {/* MAIN CARD */}
+    <div
+      className="relative z-10 w-full pb-9"
+      style={{
+        maxWidth: "420px",
+        background: "#fff",
+      }}
+    >
         {/* HEADER */}
         <div className="text-center px-6 pt-6 pb-4">
           <Typography variant="label" className="text-[#c4897a] mb-1">

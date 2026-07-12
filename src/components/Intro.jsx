@@ -1,8 +1,30 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function Intro({ onEnter }) {
   const [clicked, setClicked] = useState(false);
+  const topFlapRef = useRef(null);
+  const rafRef = useRef(null);
+  const startTimeRef = useRef(null);
+
+  function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+
+  function animateFlap(ts) {
+    if (!startTimeRef.current) startTimeRef.current = ts;
+    const elapsed = ts - startTimeRef.current;
+    const t = Math.min(elapsed / 700, 1);
+    const e = easeOut(t);
+
+    const flap = topFlapRef.current;
+    if (flap) {
+      flap.style.transform = `perspective(600px) rotateX(${-e * 185}deg)`;
+      flap.style.transformOrigin = "110px 30px";
+    }
+
+    if (t < 1) {
+      rafRef.current = requestAnimationFrame(animateFlap);
+    }
+  }
 
   const handleClick = () => {
     if (clicked) return;
@@ -14,11 +36,18 @@ export default function Intro({ onEnter }) {
     audio.play().catch(() => {});
     window.bgMusic = audio;
 
+    // Start flap animation
+    rafRef.current = requestAnimationFrame(animateFlap);
+
     // Give the flap animation a moment before entering
     setTimeout(() => {
       onEnter();
     }, 900);
   };
+
+  useEffect(() => {
+    return () => { if (rafRef.current) cancelAnimationFrame(rafRef.current); };
+  }, []);
 
   return (
     <div className="fixed inset-0 z-50 bg-black text-white flex flex-col items-center justify-center text-center px-4">
@@ -63,15 +92,14 @@ export default function Intro({ onEnter }) {
             {/* Bottom flap */}
             <polygon points="0,160 110,95 220,160" fill="#161616" stroke="#c9a96e" strokeWidth="1" />
 
-            {/* Top flap — animates open on click */}
-            <motion.polygon
+            {/* Top flap — animates open via ref */}
+            <polygon
+              ref={topFlapRef}
               points="0,30 110,95 220,30"
               fill="#1a1a1a"
               stroke="#c9a96e"
               strokeWidth="1.5"
               style={{ transformOrigin: "110px 30px" }}
-              animate={clicked ? { rotateX: 180, opacity: 0.3 } : { rotateX: 0, opacity: 1 }}
-              transition={{ duration: 0.7, ease: "easeInOut" }}
             />
 
             {/* Wax seal */}

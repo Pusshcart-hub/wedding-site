@@ -36,16 +36,16 @@ export default function Hero() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/herobg.png"
+          src="/herobg2.png"
           alt="Wedding"
           className="w-full h-full object-cover object-bottom"
         />
       </div>
 
-      {/* BURGUNDY OVERLAY */}
-      <div className="absolute inset-0 bg-burgundy/40 z-0"></div>
+      {/* BURGUNDY OVERLAY 
+      <div className="absolute inset-0 bg-burgundy/40 z-0"></div>*/}
 
-      {/* CONTENT */}
+      {/* CENTERED CONTENT — Name, Countdown, Heading */}
       <div className="relative z-10 flex flex-col items-center w-full max-w-5xl">
 
         <motion.div
@@ -91,25 +91,37 @@ export default function Hero() {
           )}
         </motion.div>
 
-        {/* RSVP — pushed to the left */}
+      </div>
+
+      {/* RSVP BLOCK — separate partition, left-aligned */}
+      <div className="relative z-10 w-full max-w-5xl flex flex-col items-left text-center pl-6 sm:pl-16 mt-10">
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0, duration: 1 }}
+        >
+          <Typography as="h3" variant="note" className="max-w-sm">
+            Kindly RSVP on or before September 1, 2026, to ensure your spot on our special day
+          </Typography>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="mt-8 w-full text-left pl-8 sm:pl-16"
+          className="mt-4"
         >
-          <Typography as="h3" variant="note" className="mb-5 max-w-sm">
-            Kindly RSVP on or before September 1, 2026, to ensure your spot on our special day
-          </Typography>
-  <a
-    href="#rsvp"
-    className="px-8 py-3 bg-burgundy text-white rounded-full text-sm tracking-widest uppercase hover:bg-burgundy/80 transition duration-300 shadow-lg"
-  >
-    RSVP Here
-  </a>
-</motion.div>
+          <a
+            href="#rsvp"
+            className="px-8 py-3 bg-gold text-white rounded-full text-sm tracking-widest uppercase hover:bg-gold/80 transition duration-300 shadow-lg"
+          >
+            RSVP Here
+          </a>
+        </motion.div>
 
       </div>
+
     </section>
   );
 }
