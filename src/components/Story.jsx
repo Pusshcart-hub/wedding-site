@@ -63,7 +63,7 @@ export default function Story() {
               <Typography as="p" variant="storyText" className="mb-4">Through laughter, adventures, and unforgettable moments, their love grew into a story
               worth celebrating — and this is just the beginning.</Typography>
           
-           <Typography as="p" variant="storyText" className="text-cream">Through laughter, adventures, and unforgettable moments, their love grew into a story
+           <Typography as="p" variant="storyText" className="text-cream font-bold">Through laughter, adventures, and unforgettable moments, their love grew into a story
               worth celebrating — and this is just the beginning.</Typography>
 
           </div>

@@ -98,7 +98,7 @@ export default function Hero() {
     className="max-w-sm text-center"
   >
     <Typography as="h3" variant="note" className="!text-xs sm:!text-sm text-lbrown drop-shadow-lg">
-      Kindly RSVP on or before September 1, 2026, to ensure your spot on our special day
+      Kindly RSVP on or before September 10, 2026, to ensure your spot on our special day
     </Typography>
 
     <motion.a
