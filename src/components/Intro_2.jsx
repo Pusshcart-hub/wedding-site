@@ -56,7 +56,6 @@ export default function Intro_2({ onEnter }) {
           position: relative;
           width: min(680px, 88vw);
           aspect-ratio: 480 / 660;
-          overflow: hidden;
         }
         .collage * { box-sizing: border-box; }
       `}</style>
@@ -168,7 +167,7 @@ export default function Intro_2({ onEnter }) {
               alt=""
             />
             <div style={{ position: "absolute", inset: 0, background: "rgba(80, 10, 20, 0.45)" }} />
-            <div style={{ position: "relative", zIndex: 1, padding: "6% 5% 7%" }}>
+            <div style={{ position: "relative", zIndex: 1, padding: "6% 5% 7%", height: "100%" }}>
 
               {/* ── NAMES using Typography ── */}
               <Typography as="p" variant="sectionTitle" className="!text-[clamp(14px,3.5vw,26px)] text-white text-center mb-1 mt-2 leading-none">
@@ -183,12 +182,14 @@ export default function Intro_2({ onEnter }) {
 
               <Typography as="p" variant="subcontext" className="!text-cream !text-[clamp(7px,1.8vw,11px)] tracking-[0.4em] text-center mt-6">Save our date</Typography>
 
-             <Typography as="p" variant="context" className="!text-cream !text-[clamp(7px,1.8vw,20px)] tracking-[0.3em] text-center italic">10.17.26</Typography>
-<div style={{ marginTop: "66%", textAlign: "center" }}>
+              <Typography as="p" variant="context" className="!text-cream !text-[clamp(7px,1.8vw,20px)] tracking-[0.3em] text-center italic">10.17.26</Typography>
 
-  <Typography as="p" variant="subcontext" className=" !text-cream !text-[clamp(7px,1.8vw,11px)] tracking-[0.3em]">the beginning of our</Typography>
-  <Typography as="p" variant="subcontext"className=" !text-cream !text-[clamp(7px,1.8vw,11px)] tracking-[0.3em]">"happily ever after"</Typography>
-</div>
+              {/* Anchored to bottom of card, consistent across screen sizes */}
+              <div style={{ position: "absolute", bottom: "8%", left: 0, right: 0, textAlign: "center" }}>
+                <Typography as="p" variant="subcontext" className="!text-cream !text-[clamp(7px,1.8vw,11px)] tracking-[0.3em]">the beginning of our</Typography>
+                <Typography as="p" variant="subcontext" className="!text-cream !text-[clamp(7px,1.8vw,11px)] tracking-[0.3em]">"happily ever after"</Typography>
+              </div>
+
             </div>
           </div>
 
@@ -203,7 +204,7 @@ export default function Intro_2({ onEnter }) {
               transformOrigin: "left center",
             }}
             
-            animate={clicked ? { rotateY: 180, opacity: 0 } : { rotateX: 0, opacity: 1 }}
+            animate={clicked ? { rotateY: 180 } : { rotateX: 0, opacity: 1 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
             <img
