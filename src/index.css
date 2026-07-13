@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'Champagne Limousines';
   src: url('/fonts/ChampagneLimousines.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -22,7 +22,7 @@
 @font-face {
   font-family: 'Champagne Limousines';
   src: url('/fonts/ChampagneLimousinesBold.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -94,3 +94,4 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
