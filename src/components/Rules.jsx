@@ -1,5 +1,4 @@
-import Typography
- from "./Typography";
+import Typography from "./Typography";
 export default function Rules() {
 const rules = [
 { icon: "📵", title: "Is it an unplugged event?", desc: "Feel free to capture memories from your seat. To help our photo and video team document every special moment, please keep the aisles and reception walkways clear and avoid blocking their line of sight 🤍" },
@@ -36,13 +35,11 @@ return ( <section className="py-24 px-4 bg-burgundy text-white"> <div className=
 
   {/* TEXT BLOCK */}
   <div>
-    <h4 className="font-semibold">
-      {rule.title}
-    </h4>
+    
 <Typography as="h3" variant="contextHead">{rule.title}</Typography>
-    <p className="text-sm text-white/80 mt-1">
-      {rule.desc}
-    </p>
+    
+    <Typography as="h3" variant="context">  {rule.desc} </Typography>
+    
   </div></div>
       ))}
     </div>

@@ -7,14 +7,14 @@ export default function Story() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/storybg.png"
+          src="/bg_story.png"
           alt="Dress Code Background"
           className="w-full h-full object-cover"
         />
       </div>
 
-      {/* OVERLAY — improves text readability over the image */}
-      <div className="absolute inset-0 bg-white/20 z-0"></div>
+      {/* OVERLAY — improves text readability over the image 
+      <div className="absolute inset-0 bg-white/20 z-0"></div>*/}
 
       <FadeIn>
         <div className="relative z-10 max-w-2xl mx-auto">

@@ -15,7 +15,7 @@ export default function Program() {
   className="relative overflow-hidden py-24 px-4 flex flex-col justify-center items-center min-h-screen">
     <div className="absolute inset-0 z-0">
       <img
-        src="/programbg.png"
+        src="/bg_program2.png"
         alt="Wedding"
         className="w-full h-full object-cover object-bottom"
       />

@@ -103,15 +103,20 @@ export default function Intro_2({ onEnter }) {
           width: "44%", height: "40%",
           background: "#e8c0c6",
           borderRadius: "1%",
-          padding: "5% 5% 8%",
+          padding: "0% 5% 8%",
           zIndex: 4,
           boxShadow: "0 6px 28px rgba(40,0,10,0.35)",
         }}>
-          <div style={{ display: "flex", gap: "3%", justifyContent: "flex-end", marginBottom: "6%" }}>
-            <div className="placeholder" style={{ width: "30%", aspectRatio: "5/6", borderRadius: 2, flexShrink: 0 }}>stamp</div>
-            <div className="placeholder" style={{ width: "30%", aspectRatio: "5/6", borderRadius: 2, flexShrink: 0 }}>stamp</div>
-          </div>
-          <Typography as="p" variant="sectionTitle" className="text-burgundy mb-4">A warm welcome to our dearest guests</Typography>
+          <div style={{ display: "flex", gap: "3%", justifyContent: "flex-end", marginBottom: "2%" }}>
+            <img
+    src="/introToken.png"
+    alt="Postage stamp"
+    style={{ width: "30%", aspectRatio: "4/6", borderRadius: 2, flexShrink: 0, objectFit: "contain" }}
+  />
+             </div>
+          <Typography as="p" variant="sectionTitle" className="!text-[clamp(16px,4vw,35px)] !leading-tight text-burgundy mb-1">A warm </Typography>
+<Typography as="p" variant="sectionTitle" className="!text-[clamp(16px,4vw,30px)] !leading-tight text-burgundy mb-1">welcome to our</Typography> 
+<Typography as="p" variant="sectionTitle" className="!text-[clamp(16px,4vw,35px)] !leading-tight text-burgundy">dearest guests</Typography>
         </div>
 
         {/* 3. CALLA LILY — between top cards */}

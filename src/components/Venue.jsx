@@ -16,15 +16,13 @@ export default function Venue() {
           <Typography as="h1" variant="sectionTitle" className="text-burgundy mb-10">Wedding Venue</Typography>
 
           <div className="bg-cream rounded-2xl shadow-lg p-6 sm:p-10 mb-10">
-             <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 text-left">
-            Ceremony
-          </h2>
+          <Typography as="h3" variant="HeadingU" className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 text-left"> Ceremony</Typography>
             <h3 className="text-xl sm:text-2xl font-serif text-burgundy mb-2">
               Santuario de San Vicente de Paul: Shrine of the Poor
             </h3>
-            <p className="text-gray-600 mb-4">
+            <Typography as ="p" variant="context" className="!text-base !text-semibold mb-4" >
               221 Tandang Sora Ave, Tandang Sora, Quezon City, 1116 Metro Manila
-            </p>
+            </Typography>
            
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="w-full sm:w-1/2 h-[250px] sm:h-[300px] rounded-xl overflow-hidden shadow-md">
@@ -45,15 +43,13 @@ export default function Venue() {
                 ></iframe>
               </div>
             </div>{" "}
-            <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 mt-4 text-left">
-            Reception
-          </h2>
+            <Typography as="h3" variant="HeadingU" className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 mt-4 text-left"> Reception</Typography>
+          
           <h3 className="text-xl sm:text-2xl font-serif text-burgundy mb-2">
               Bulwagang San Vicente
             </h3>
-           <p className="text-gray-500 text-sm">
-              Dinner and dancing to follow at Bulwagang San Vicente (Same location)
-            </p>
+             <Typography as ="p" variant="context" className="!text-base !text-semibold" >  Dinner and dancing to follow at Bulwagang San Vicente (Same location)</Typography>   
+            
           </div>
         </div>
       </FadeIn>
