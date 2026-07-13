@@ -42,14 +42,10 @@ export default function Program() {
     >
         {/* HEADER */}
         <div className="text-center px-6 pt-6 pb-4">
-          <Typography variant="label" className="text-[#c4897a] mb-1">
+          <Typography variant="label" className="text-plum font-bold mb-1">
             October 17, 2026
           </Typography>
-          <Typography
-            as="p"
-            variant="subHeader"
-            className="!text-[#3a2a25] text-xs leading-snug mt-1 mb-2"
-          >
+          <Typography as="p" variant="subHeader" className="!text-[#3a2a25] text-xs leading-snug mt-1 mb-2">
             The Wedding Day
             <br />
             Schedule

@@ -1,6 +1,7 @@
 import FadeIn from "./FadeIn";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Typography from "./Typography";
 
 export default function RSVP() {
   const [loading, setLoading] = useState(false);
@@ -68,13 +69,11 @@ export default function RSVP() {
       <FadeIn>
         <div className="max-w-xl mx-auto text-center">
 
-          <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
+          <Typography as="p" variant="context" className="uppercase tracking-[0.2em] !text-xs text-rose-400 mb-2">
             Join Us
-          </p>
+          </Typography>
 
-          <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-10">
-            RSVP
-          </h2>
+          <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-burgundy mt-4 mb-10 text-center">RSVP</Typography>
 
           {!success && (
             <form
@@ -111,7 +110,7 @@ export default function RSVP() {
                     onChange={handleChange}
                     className="accent-burgundy"
                   />
-                  Will attend
+                  <Typography as="span" variant="context">Will attend</Typography>
                 </label>
 
                 <label className="flex items-center gap-2 cursor-pointer">
@@ -123,13 +122,13 @@ export default function RSVP() {
                     onChange={handleChange}
                     className="accent-burgundy"
                   />
-                  Cannot attend
+                  <Typography as="span" variant="context">Cannot attend</Typography>
                 </label>
               </div>
 
               {form.attending === "yes" && (
                 <>
-                  <p className="text-sm text-gray-500">Number of Guests</p>
+                  <Typography as="p" variant="context" className="!text-sm text-gray-500">Number of Guests</Typography>
 
                   <select
                     name="guests"
@@ -171,7 +170,9 @@ export default function RSVP() {
                 {loading && (
                   <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
                 )}
-                {loading ? "Submitting..." : "Submit RSVP"}
+                <Typography as="span" variant="context" className="!text-white">
+                  {loading ? "Submitting..." : "Submit RSVP"}
+                </Typography>
               </button>
             </form>
           )}
@@ -191,31 +192,30 @@ export default function RSVP() {
             {submittedAttending === "yes" ? (
               <>
                 <div className="text-4xl mb-4">🎉</div>
-                <h3 className="text-2xl font-serif text-burgundy mb-4">
+                <Typography as="h3" variant="sectionTitle" className="!text-2xl text-burgundy mb-4">
                   See You There!
-                </h3>
-                <p className="text-gray-600 mb-6">
+                </Typography>
+                <Typography as="div" variant="context" className="text-gray-600 mb-6">
                   We're so happy you'll be joining us. We can't wait to celebrate with you on October 17!
                   <a
-                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Joanna+%26+Vincent+Wedding&dates=20261017T040000Z/20261017T130000Z&location=Santuario+de+San+Vicente+de+Paul,+Quezon+City"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full mb-3 px-6 py-2 border border-burgundy text-burgundy rounded-full text-sm hover:bg-burgundy hover:text-white transition duration-300"
-                >
-                  + Add to Calendar
-                </a>
-                </p>
+                    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Joanna+%26+Vincent+Wedding&dates=20261017T040000Z/20261017T130000Z&location=Santuario+de+San+Vicente+de+Paul,+Quezon+City"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full mb-3 px-6 py-2 border border-burgundy text-burgundy rounded-full text-sm hover:bg-burgundy hover:text-white transition duration-300"
+                  >
+                    + Add to Calendar
+                  </a>
+                </Typography>
               </>
-              
             ) : (
               <>
                 <div className="text-4xl mb-4">💌</div>
-                <h3 className="text-2xl font-serif text-burgundy mb-4">
+                <Typography as="h3" variant="sectionTitle" className="!text-2xl text-burgundy mb-4">
                   We'll Miss You
-                </h3>
-                <p className="text-gray-600 mb-6">
+                </Typography>
+                <Typography as="p" variant="context" className="text-gray-600 mb-6">
                   Thank you for letting us know. You'll be in our hearts on our special day.
-                </p>
+                </Typography>
               </>
             )}
 
@@ -223,7 +223,7 @@ export default function RSVP() {
               onClick={() => setSuccess(false)}
               className="px-6 py-2 bg-burgundy text-white rounded-full hover:opacity-90 transition"
             >
-              Close
+              <Typography as="span" variant="context" className="!text-white">Close</Typography>
             </button>
           </motion.div>
         </div>

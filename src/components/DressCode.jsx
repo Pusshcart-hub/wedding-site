@@ -23,7 +23,7 @@ export default function DressCode() {
           Look & Feel
         </p>
 
-        <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-burgundy mt-7 mb-10">
+        <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-cream  mt-7 mb-10 drop-shadow-xl">
           Theme & Dress Code
         </Typography>
 
@@ -62,9 +62,9 @@ export default function DressCode() {
             <h3 className="font-serif text-xl text-burgundy mb-2">
               Dress Code
             </h3>
-            <p className="italic text-gray-700 mb-3">
-              <Typography as="h3" variant="contextHead">Formal / Black Tie</Typography>
-            </p>
+            
+              <Typography as="h3" variant="contextHead" className="mb-3">Semi formal</Typography>
+            
 
             <ul className="text-sm text-gray-600 space-y-2 text-left">
               <li><Typography as="h3" variant="context">✦ Ladies: Floor-length gown or a dress that falls below the knee </Typography></li>

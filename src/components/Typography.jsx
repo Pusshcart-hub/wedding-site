@@ -12,9 +12,11 @@ const variants = {
   note: 'font-elegant text-sm md:text-base tracking-tight italic',
   contextHead: 'font-elegant text-md md:text-lg font-bold',
   context: 'font-elegant text-xs md:text-sm font-bold tracking-tight',
+  subcontext: 'font-elegant text-xs md:text-sm font-semibold tracking-widest uppercase',
   subHeader: 'font-elegant text-sm md:text-base tracking-tight uppercase',
   timeStamp: 'font-elegant text-xs tracking-wide',
   eventTitle: 'font-elegant text-sm font-semibold tracking-wide',
+  storyText:'font-elegant text-xs md:text-sm tracking-wide',
 
   // Cormorant Garamond — subheadings, pull quotes
   sub:     'font-heading text-xl md:text-3xl italic font-light',

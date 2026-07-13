@@ -171,54 +171,24 @@ export default function Intro_2({ onEnter }) {
             <div style={{ position: "relative", zIndex: 1, padding: "6% 5% 7%" }}>
 
               {/* ── NAMES using Typography ── */}
-              <Typography as="p" variant="sectionTitle" className="!text-[clamp(14px,3.5vw,26px)] text-white text-center mb-2 mt-5 leading-none">
+              <Typography as="p" variant="sectionTitle" className="!text-[clamp(14px,3.5vw,26px)] text-white text-center mb-1 mt-2 leading-none">
                 Joanna     
               </Typography>
-              <Typography as="p" variant="names" className="!text-[clamp(11px,2.8vw,20px)] text-white/80 text-center mb-2">
+              <Typography as="p" variant="names" className="!text-[clamp(11px,2.8vw,20px)] text-white/80 text-center mb-1">
                 and
               </Typography>
-              <Typography as="p" variant="sectionTitle" className="!text-[clamp(14px,3.5vw,26px)] text-white text-center mb-10 leading-none">
+              <Typography as="p" variant="sectionTitle" className="!text-[clamp(14px,3.5vw,26px)] text-white text-center mb-3 leading-none">
                 Vincent
               </Typography>
-            
-              <p style={{
-                fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "clamp(7px, 1.2vw, 11px)",
-                fontWeight: 600, letterSpacing: "0.28em",
-                textTransform: "uppercase", color: "rgba(255,255,255,0.8)",
-                textAlign: "center", margin: 0,
-              }}>Save Our Date</p>
-               <Typography as="p" variant="names" className="!text-[clamp(14px,3.5vw,26px)] text-white text-center mb-2 leading-none"></Typography>
-              <div style={{ textAlign: "center", marginBottom: "4%" }}>
-                
-               {/* <p style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(12px, 2.5vw, 20px)", color: "rgba(255,255,255,0.9)", margin: "0 0 2px" }}>the beginning of our "happily ever after"</p>
-                 */}<p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "clamp(13px, 3vw, 24px)", fontWeight: 700, fontStyle: "italic", color: "#fff", margin: 0, letterSpacing: "0.04em" }}>10.17.26</p>
-             
-             <div style={{ 
-  position: "absolute", 
-  top: "150%", 
-  left: 0, 
-  right: 0, 
-  textAlign: "center" 
-}}>
-             <p style={{
-                fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "clamp(7px, 1.2vw, 11px)",
-                fontWeight: 600, letterSpacing: "0.28em",
-                textTransform: "uppercase", color: "rgba(255,255,255,0.8)",
-                textAlign: "center", margin: 0,
-              }}>the beginning of our</p>
-              <p style={{
-                fontFamily: "'Cormorant Garamond', serif",
-                fontSize: "clamp(7px, 1.2vw, 11px)",
-                fontWeight: 600, letterSpacing: "0.28em",
-                textTransform: "uppercase", color: "rgba(255,255,255,0.8)",
-                textAlign: "center", margin: 0,
-              }}>"happily ever after"</p>
-             </div>
-              </div>
 
-              
+              <Typography as="p" variant="subcontext" className="!text-cream !text-[clamp(7px,1.8vw,11px)] tracking-[0.4em] text-center mt-6">Save our date</Typography>
+
+             <Typography as="p" variant="context" className="!text-cream !text-[clamp(7px,1.8vw,20px)] tracking-[0.3em] text-center italic">10.17.26</Typography>
+<div style={{ marginTop: "66%", textAlign: "center" }}>
+
+  <Typography as="p" variant="subcontext" className=" !text-cream !text-[clamp(7px,1.8vw,11px)] tracking-[0.3em]">the beginning of our</Typography>
+  <Typography as="p" variant="subcontext"className=" !text-cream !text-[clamp(7px,1.8vw,11px)] tracking-[0.3em]">"happily ever after"</Typography>
+</div>
             </div>
           </div>
 
@@ -249,7 +219,7 @@ export default function Intro_2({ onEnter }) {
         {/* 7. MONOGRAM CARD — bottom left */}
         <div style={{
           position: "absolute",
-          top: "65%", left: "2%",
+          top: "60%", left: "2%",
           width: "27%", aspectRatio: "3/4",
           
           borderRadius: "2%",

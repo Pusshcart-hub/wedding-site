@@ -17,9 +17,8 @@ export default function Venue() {
 
           <div className="bg-cream rounded-2xl shadow-lg p-6 sm:p-10 mb-10">
           <Typography as="h3" variant="HeadingU" className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 text-left"> Ceremony</Typography>
-            <h3 className="text-xl sm:text-2xl font-serif text-burgundy mb-2">
-              Santuario de San Vicente de Paul: Shrine of the Poor
-            </h3>
+           <Typography as="h3" variant="HeadingU" className="!text-2xl sm:text-3xl font-serif text-burgundy mb-1 text-center"> Santuario de San Vicente de Paul: Shrine of the Poor</Typography>
+           
             <Typography as ="p" variant="context" className="!text-base !text-semibold mb-4" >
               221 Tandang Sora Ave, Tandang Sora, Quezon City, 1116 Metro Manila
             </Typography>
@@ -45,9 +44,8 @@ export default function Venue() {
             </div>{" "}
             <Typography as="h3" variant="HeadingU" className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 mt-4 text-left"> Reception</Typography>
           
-          <h3 className="text-xl sm:text-2xl font-serif text-burgundy mb-2">
-              Bulwagang San Vicente
-            </h3>
+          <Typography as="h3" variant="HeadingU" className="!text-2xl sm:text-3xl font-serif text-burgundy mb-1 text-center">   Bulwagang San Vicente</Typography>
+          
              <Typography as ="p" variant="context" className="!text-base !text-semibold" >  Dinner and dancing to follow at Bulwagang San Vicente (Same location)</Typography>   
             
           </div>
