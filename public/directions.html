@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Getting to Bulwagang San Vicente</title>
+<style>
+  @font-face {
+    font-family: 'Amalfi Coast';
+    src: url('/fonts/AmalfiCoast.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Champagne Limousines';
+    src: url('/fonts/ChampagneLimousines.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Champagne Limousines';
+    src: url('/fonts/ChampagneLimousinesBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root{
+    --ink:#2D1B3D;
+    --bg:#600000;
+    --cream:#FAF5F0;
+    --gold:#b8964f;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+  body{
+    margin:0;min-height:100vh;background:var(--bg);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Champagne Limousines','Jost',sans-serif;color:var(--ink);padding:24px;
+  }
+  .card{
+    max-width:420px;width:100%;text-align:center;
+    background:var(--cream);
+    padding:40px 28px;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.35);
+  }
+  .ornament{font-size:20px;color:var(--gold);letter-spacing:6px;margin-bottom:6px;}
+  h1{
+    font-family:'Amalfi Coast', cursive;
+    font-weight:normal;
+    font-size:35px;
+    margin:0 0 6px;
+    color:var(--ink);
+  }
+  p.venue{
+    font-size:15px;margin:0 0 32px;color:var(--ink);opacity:0.75;
+  }
+  .choice-label{
+    font-weight:600;
+    font-size:12px;text-transform:uppercase;letter-spacing:2px;
+    color:var(--gold);margin-bottom:16px;
+  }
+  a.nav-btn{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    width:100%;padding:16px 20px;margin-bottom:14px;border-radius:14px;
+    text-decoration:none;font-weight:600;font-size:17px;
+    box-shadow:0 2px 10px rgba(45,27,61,0.10);
+    transition:transform 0.15s ease;
+  }
+  a.nav-btn:active{transform:scale(0.98);}
+  .gmaps{background:var(--ink);color:var(--cream);}
+  .waze{background:var(--cream);color:var(--ink);border:1.5px solid var(--gold);}
+  footer{
+    margin-top:28px;font-family:'Amalfi Coast',cursive;
+    font-size:20px;color:var(--gold);opacity:0.8;
+  }
+  .divider{display:flex;align-items:center;gap:10px;color:var(--gold);font-size:11px;margin:4px 0 18px;font-family:'Jost',sans-serif;}
+  .divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--gold);opacity:0.4;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="ornament">❦</div>
+    <h1>Getting There</h1>
+    <p class="venue">Bulwagang San Vicente<br>221 Tandang Sora Ave, Quezon City</p>
+    <div class="choice-label">Choose your navigation app</div>
+    <a class="nav-btn gmaps" href="https://www.google.com/maps/dir/?api=1&destination=Bulwagang+San+Vicente,+221+Tandang+Sora+Ave,+Quezon+City&travelmode=driving">
+      Open in Google Maps
+    </a>
+    <div class="divider">or</div>
+    <a class="nav-btn waze" href="https://waze.com/ul?ll=14.6775988,121.0396076&navigate=yes&z=17">
+      Open in Waze
+    </a>
+    <footer>J &amp; V</footer>
+  </div>
+</body>
+</html>
