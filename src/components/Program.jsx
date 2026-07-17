@@ -80,7 +80,7 @@ export default function Program() {
 
               {/* CONTENT */}
               <div className={i !== events.length - 1 ? "pb-4 pt-0.5" : "pt-0.5"}>
-                <Typography variant="eventTitle" className="text-[#3a2a25] text-[14px] font-semibold mb-0.5 not-italic">
+                <Typography variant="eventTitle" className="text-[#3a2a25] text-[14px] mb-0.5 not-italic">
                   {event.title}
                 </Typography>
                 <Typography variant="note" className="text-[#a08070] text-[12px]">

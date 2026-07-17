@@ -31,9 +31,9 @@ export default function Story() {
               {/* Main center photo */}
               <div
                 className="absolute rounded-sm overflow-hidden shadow-lg"
-                style={{ width: '50%', height: 420, left: '50%', marginTop: -30, transform: 'translateX(-50%)', top: 30, zIndex: 2 }}
+                style={{ width: '60%', aspectRatio: '3/2', left: '50%', marginTop: -30, transform: 'translateX(-50%)', top: 100, zIndex: 2 }}
               >
-                <img src="/gall1.jpg" alt="Us together" className="w-full h-full object-cover" />
+                <img src="/storyMid.jpeg" alt="Us together" className="w-full h-full object-contain" />
               </div>
 
               {/* Left photo — grayscale, slightly rotated */}
@@ -54,14 +54,6 @@ export default function Story() {
 
             </div>
 
-            <Typography as="p" variant="storyText" className="mb-4">
-              It was a quiet autumn evening when their eyes first met across a crowded room.
-              What started as a simple conversation turned into something neither of them expected.
-           </Typography>
-            <Typography as="p" variant="storyText" className="font-bold !text-xs mb-4 mt-4">Through laughter, adventures, and unforgettable moments, their love grew into a story
-              worth celebrating — and this is just the beginning.</Typography>
-              <Typography as="p" variant="storyText" className="mb-4">Through laughter, adventures, and unforgettable moments, their love grew into a story
-              worth celebrating — and this is just the beginning.</Typography>
           
            <Typography as="p" variant="storyText" className="text-cream font-bold">Through laughter, adventures, and unforgettable moments, their love grew into a story
               worth celebrating — and this is just the beginning.</Typography>

@@ -49,9 +49,9 @@ export default function DressCode() {
               <div className="w-6 h-6 rounded-full bg-[#E8C5BC]" />
               <div className="w-6 h-6 rounded-full bg-[#C9A96E]" /> */} 
                <img
-    src="/dressShades.png"
+    src="/dc_color.png"
     alt="Color Palette"
-    className="h-16 object-contain"
+    className="h-14 object-contain"
   />
             </div>
           </div>

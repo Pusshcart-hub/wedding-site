@@ -15,7 +15,7 @@ const variants = {
   subcontext: 'font-elegant text-xs md:text-sm font-semibold tracking-widest uppercase',
   subHeader: 'font-elegant text-sm md:text-base tracking-tight uppercase',
   timeStamp: 'font-elegant text-xs tracking-wide',
-  eventTitle: 'font-elegant text-sm font-semibold tracking-wide',
+  eventTitle: 'font-elegant text-sm font-bold tracking-wide',
   storyText:'font-elegant text-xs md:text-sm tracking-wide',
 
   // Cormorant Garamond — subheadings, pull quotes
