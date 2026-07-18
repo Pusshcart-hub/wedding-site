@@ -26,12 +26,15 @@ export default function Story() {
             <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-b1 mt-4 text-center"> How It All Began</Typography>
 
             {/* Photo Collage */}
-            <div className="relative mx-auto mb-12" style={{ width: '100%', maxWidth: 700, height: 400 }}>
+            <div
+              className="relative mx-auto mb-0 sm:mb-4 h-[230px] sm:h-[370px]"
+              style={{ width: '100%', maxWidth: 700 }}
+            >
 
               {/* Main center photo */}
               <div
                 className="absolute rounded-sm overflow-hidden shadow-lg"
-                style={{ width: '60%', aspectRatio: '3/2', left: '50%', marginTop: -30, transform: 'translateX(-50%)', top: 100, zIndex: 2 }}
+                style={{ width: '60%', aspectRatio: '3/2', left: '50%', transform: 'translateX(-50%)', top: '17%', zIndex: 2 }}
               >
                 <img src="/storyMid.jpeg" alt="Us together" className="w-full h-full object-contain" />
               </div>
@@ -39,7 +42,7 @@ export default function Story() {
               {/* Left photo — grayscale, slightly rotated */}
               <div
                 className="absolute rounded-sm overflow-hidden shadow-lg"
-                style={{ width: '28%', aspectRatio: '3 / 4', left: '2%', top: 150, zIndex: 3, transform: 'rotate(-4deg)' }}
+                style={{ width: '28%', aspectRatio: '3 / 4', left: '2%', top: '37%', zIndex: 3, transform: 'rotate(-4deg)' }}
               >
                 <img src="/storyLeft.jpg" alt="A quiet moment" className="w-full h-full object-cover" />
               </div>
@@ -47,7 +50,7 @@ export default function Story() {
               {/* Right photo — behind main */}
               <div
                 className="absolute rounded-sm overflow-hidden shadow-lg"
-                style={{ width: '28%', aspectRatio: '3 / 4', right: '2%', top: 45, zIndex: 3, transform: 'rotate(3deg)' }}
+                style={{ width: '28%', aspectRatio: '3 / 4', right: '2%', top: '11%', zIndex: 3, transform: 'rotate(3deg)' }}
               >
                 <img src="/storyRight.jpg" alt="Smiling together" className="w-full h-full object-cover" />
               </div>
