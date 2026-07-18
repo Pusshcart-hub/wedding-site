@@ -2,10 +2,10 @@ import Typography from "./Typography";
 
 const events = [
   { time: "12:30 PM", title: "Guest Arrival & Seating", desc: "Santuario de San Vicente de Paul" },
-  { time: "1:15 PM", title: "Wedding Ceremony", desc: "Exchange of vows & rings, Unity candle lighting" },
-  { time: "2:30 PM", title: "Pictorials", desc: "Photo with Entourage, Couple Empty Ballroom shots" },
+  { time: "1:15 PM", title: "Wedding Ceremony", desc: "Processional • Exchange of Vows & Rings\n• Unity Ceremony • Final Blessing" },
+  { time: "2:30 PM", title: "Pictorials", desc: "Photos with Entourage • Couple Portraits \n• Empty Reception Hall Photos" },
   { time: "3:00 PM", title: "Cocktail Hour & Socials", desc: "Drinks & Foods" },
-  { time: "4:00 PM", title: "Reception Program & Dinner", desc: "Grand entrance of the newlyweds, Toasts, Dinner and more." },
+  { time: "4:00 PM", title: "Reception Program & Dinner", desc: "Grand Entrance of the Newlyweds \n• Wedding Traditions • Dinner" },
 ];
 
 export default function Program() {
@@ -83,7 +83,7 @@ export default function Program() {
                 <Typography variant="eventTitle" className="text-[#3a2a25] text-[14px] mb-0.5 not-italic">
                   {event.title}
                 </Typography>
-                <Typography variant="note" className="text-[#a08070] text-[12px]">
+                <Typography variant="note" className="text-[#a08070] text-[12px] whitespace-pre-line">
                   {event.desc}
                 </Typography>
               </div>
