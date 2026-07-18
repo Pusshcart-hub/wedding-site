@@ -3,21 +3,22 @@ import Typography from "./Typography";
 
 export default function Venue() {
   return (
-    <section id="venue" className="py-20 px-4 bg-white">
+    <section id="venue" className="relative isolate py-20 px-4 bg-plum">
+      <div className="absolute inset-0 bg-white/10 -z-10 pointer-events-none"></div>
       <FadeIn>
         <div className="max-w-5xl mx-auto text-center">
-          <p className="uppercase tracking-[0.2em] text-xs text-rose-400 mb-2">
+          <p className="uppercase tracking-[0.2em] text-xs text-rose-600">
             Location
           </p>
 
-          <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-10">
+          <h2 className="text-3xl sm:text-4xl font-serif text-burgundy mb-6">
             
           </h2>
-          <Typography as="h1" variant="sectionTitle" className="text-burgundy mb-10">Wedding Venue</Typography>
+          <Typography as="h1" variant="sectionTitle" className="text-gold mb-10">Wedding Venue</Typography>
 
           <div className="bg-cream rounded-2xl shadow-lg p-6 sm:p-10 mb-10">
-          <Typography as="h3" variant="HeadingU" className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 text-left"> Ceremony</Typography>
-           <Typography as="h3" variant="HeadingU" className="!text-2xl sm:text-3xl font-serif text-burgundy mb-1 text-center"> Santuario de San Vicente de Paul: Shrine of the Poor</Typography>
+          <Typography as="h1" variant="label2" className="!text-4xl !sm:text-3xl text-burgundy mb-1 text-left !tracking-normal font-bold"> Ceremony</Typography>
+           <Typography as="h1" variant="label2" className="!text-2xl sm:text-3xl !font-semibold text-burgundy mb-1 text-center !tracking-normal !font-extrabold"> Santuario de San Vicente de Paul: Shrine of the Poor</Typography>
            
             <Typography as ="p" variant="context" className="!text-base !text-semibold mb-4" >
               221 Tandang Sora Ave, Tandang Sora, Quezon City, 1116 Metro Manila
@@ -42,9 +43,9 @@ export default function Venue() {
                 ></iframe>
               </div>
             </div>{" "}
-            <Typography as="h3" variant="HeadingU" className="text-3xl sm:text-4xl font-serif text-burgundy mb-1 mt-4 text-left"> Reception</Typography>
+            <Typography as="h1" variant="label2" className="!text-4xl !sm:text-3xl text-burgundy mb-1 text-left !tracking-normal font-bold mt-4">  Reception</Typography>
           
-          <Typography as="h3" variant="HeadingU" className="!text-2xl sm:text-3xl font-serif text-burgundy mb-1 text-center">   Bulwagang San Vicente</Typography>
+          <Typography as="h1" variant="label2" className="!text-2xl sm:text-3xl !font-semibold text-burgundy mb-1 text-center !tracking-normal !font-extrabold">   Bulwagang San Vicente</Typography>
           
              <Typography as ="p" variant="context" className="!text-base !text-semibold" >  Dinner and dancing to follow at Bulwagang San Vicente (Same location)</Typography>   
             

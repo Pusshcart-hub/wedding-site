@@ -9,9 +9,9 @@ export default function Intro_2({ onEnter }) {
     if (clicked) return;
     setClicked(true);
 
-    const audio = new Audio("/test.mp3");
+    const audio = new Audio("/intro.mp3");
     audio.loop = true;
-    audio.volume = 0.5;
+    audio.volume = 0.2;
     audio.play().catch(() => {});
     window.bgMusic = audio;
 
@@ -78,7 +78,7 @@ export default function Intro_2({ onEnter }) {
           pointerEvents: "none",
         }}
       >
-        tap to enter
+        <Typography as="p" variant="subcontext" className="!font-bold">TAP THE SEAL TO ENTER</Typography>
       </motion.p>
 
       <div className="collage">
