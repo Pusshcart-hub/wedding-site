@@ -55,8 +55,8 @@ export default function DressCode() {
   />
   
             </div>
-           <p className="text-xs text-gray-500 italic mt-4 leading-relaxed">
-              <Typography as="span" variant="context" className="!text-[13px]">
+           <p className="text-xs text-gray-500 mt-4 leading-relaxed">
+              <Typography as="h3" variant="context">
                 <span className="font-extrabold text-lbrown">Kindly note:</span> To our Principal Sponsors, Secondary Sponsors, and other members of the entourage, we request that you follow the designated color palette that was personally provided to you. We sincerely appreciate your cooperation and look forward to celebrating with you 🙂
               </Typography>
             </p>
