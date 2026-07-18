@@ -103,7 +103,7 @@ export default function DressCode() {
               </li>
               <li className="italic mt-0 text-center">
                 <Typography as="h3" variant="context">
-                  (Please try to avoid white in your attire)
+                  (Please avoid white in your attire)
                 </Typography>
               </li>
             </ul>
