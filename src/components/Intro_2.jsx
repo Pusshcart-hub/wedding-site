@@ -78,7 +78,7 @@ export default function Intro_2({ onEnter }) {
           pointerEvents: "none",
         }}
       >
-        <Typography as="p" variant="subcontext" className="!font-bold">TAP THE SEAL TO ENTER</Typography>
+        <Typography as="h1" variant="context" className=" !font-extrabold !tracking-wide !text-cream">TAP THE SEAL TO ENTER</Typography>
       </motion.p>
 
       <div className="collage">
