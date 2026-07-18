@@ -23,7 +23,11 @@ export default function DressCode() {
           Look & Feel
         </p>
 
-        <Typography as="p" variant="sectionTitle" className="!text-3xl sm:text-4xl text-cream  mt-7 mb-10 drop-shadow-xl">
+        <Typography
+          as="p"
+          variant="sectionTitle"
+          className="!text-3xl sm:text-4xl text-cream mt-7 mb-10 drop-shadow-xl"
+        >
           Theme & Dress Code
         </Typography>
 
@@ -32,58 +36,81 @@ export default function DressCode() {
           {/* Motif */}
           <div className="bg-white p-6 rounded-2xl shadow-md">
             <div className="text-3xl mb-3">🌹</div>
-            <h3 className="font-serif text-xl text-burgundy mb-2">
+
+            <Typography
+              as="h2"
+              variant="contextHead"
+              className="!text-xl !md:text-lg !font-extrabold text-burgundy mb-2"
+            >
               Our Theme
-            </h3>
-            <p className="italic text-gray-700 mb-3">
-              <Typography as="h3" variant="contextHead">Modern Romantic Elegance</Typography>
-            </p>
+            </Typography>
+
+            <Typography as="h3" variant="contextHead" className="mb-3">
+              Modern Romantic Elegance
+            </Typography>
+
             <p className="text-sm text-gray-500">
-             <Typography as="h3" variant="context"> We encourage our guests to dress according to the color palette below</Typography>
+              <Typography as="h3" variant="context">
+                We encourage our guests to dress according to the color palette below
+              </Typography>
             </p>
 
             <div className="flex justify-center gap-2 mt-2">
-            {/* <div className="w-6 h-6 rounded-full bg-[#6B1A2A]" />
-              <div className="w-6 h-6 rounded-full bg-[#2D1B3D]" />
-              <div className="w-6 h-6 rounded-full bg-[#C4857A]" />
-              <div className="w-6 h-6 rounded-full bg-[#E8C5BC]" />
-              <div className="w-6 h-6 rounded-full bg-[#C9A96E]" /> */} 
-               <img
-    src="/dc_color.png"
-    alt="Color Palette"
-    className="h-14 object-contain"
-  />
-  
+              <img
+                src="/dc_color.png"
+                alt="Color Palette"
+                className="h-14 object-contain"
+              />
             </div>
-           <p className="text-xs text-gray-500 mt-4 leading-relaxed">
+
+            <p className="text-xs text-gray-500 mt-4 leading-relaxed">
               <Typography as="h3" variant="context">
-                <span className="font-extrabold text-lbrown">Kindly note:</span> To our Principal Sponsors, Secondary Sponsors, and other members of the entourage, we request that you follow the designated color palette that was personally provided to you. We sincerely appreciate your cooperation and look forward to celebrating with you 🙂
+                <span className="font-extrabold text-lbrown">Kindly note:</span> To
+                our Principal Sponsors, Secondary Sponsors, and other members of the
+                entourage, we request that you follow the designated color palette
+                that was personally provided to you. We sincerely appreciate your
+                cooperation and look forward to celebrating with you 🙂
               </Typography>
             </p>
           </div>
-          
 
           {/* Dress Code */}
           <div className="bg-white p-6 rounded-2xl shadow-md">
             <div className="text-3xl mb-3">👗</div>
-            <h3 className="font-serif text-xl text-burgundy mb-2">
+
+            <Typography
+              as="h2"
+              variant="contextHead"
+              className="!text-xl !md:text-lg !font-extrabold text-burgundy mb-2"
+            >
               Dress Code
-            </h3>
-            
-              <Typography as="h3" variant="contextHead" className="mb-3">Semi formal</Typography>
-            
+            </Typography>
+
+            <Typography as="h3" variant="contextHead" className="mb-3">
+              Semi formal
+            </Typography>
 
             <ul className="text-sm text-gray-600 space-y-5 text-left mt-4">
-              <li><Typography as="h3" variant="context">✦ Ladies: Floor-length gown or a dress that falls below the knee </Typography></li>
-              <li><Typography as="h3" variant="context">✦ Gentlemen: Suit or long sleeves with slacks</Typography></li>
-             
-             
-              <li className="italic" mt-0 text-center><Typography as="h3" variant="context">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Please try to avoid white in your attire)</Typography></li>
+              <li>
+                <Typography as="h3" variant="context">
+                  ✦ Ladies: Floor-length gown or a dress that falls below the knee
+                </Typography>
+              </li>
+              <li>
+                <Typography as="h3" variant="context">
+                  ✦ Gentlemen: Suit or long sleeves with slacks
+                </Typography>
+              </li>
+              <li className="italic mt-0 text-center">
+                <Typography as="h3" variant="context">
+                  (Please try to avoid white in your attire)
+                </Typography>
+              </li>
             </ul>
           </div>
 
         </div>
-        
+
       </div>
 
     </section>
