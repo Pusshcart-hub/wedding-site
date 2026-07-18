@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Home, Heart, Calendar, MapPin, Mail, ScrollText } from "lucide-react";
+import { Home, Heart, Calendar, MapPin, Mail, ScrollText, Shirt, Info } from "lucide-react";
 
 export default function Nav() {
 const [active, setActive] = useState("");
@@ -7,16 +7,17 @@ const [active, setActive] = useState("");
 const links = [
 { id: "hero", icon: <Home size={18} /> },
 { id: "story", icon: <Heart size={18} /> },
-{ id: "timeline", icon: <Calendar size={18} /> },
 { id: "program", icon: <ScrollText size={18} /> },
 { id: "venue", icon: <MapPin size={18} /> },
+{ id: "dresscode", icon: <Shirt size={18} /> },
+{ id: "faq", icon: <Info size={18} /> },
 { id: "rsvp", icon: <Mail size={18} /> },
 
 ];
 
 useEffect(() => {
 const handleScroll = () => {
-const sections = ["hero", "story", "timeline","program","venue", "rsvp"];
+const sections = ["hero", "story","program","venue","dresscode","faq", "rsvp"];
 let current = "";
 
 

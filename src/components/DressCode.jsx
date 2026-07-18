@@ -2,7 +2,7 @@ import Typography from "./Typography";
 
 export default function DressCode() {
   return (
-    <section className="relative overflow-hidden py-24 px-4">
+    <section id="dresscode" className="relative overflow-hidden py-24 px-4">
 
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">

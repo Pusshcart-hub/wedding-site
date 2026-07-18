@@ -17,7 +17,7 @@ const rules = [
 { icon: "🍷", title: "Will alcohol be served at the reception?", desc: "Absolutely! Our mobile bar will be ready to keep the drinks—and the good vibes—flowing. As we'll be celebrating at a church-affiliated venue, we simply ask everyone to sip responsibly and help us keep the atmosphere fun, respectful, and enjoyable for all."},
 ];
 
-return ( <section className="py-24 px-4 bg-burgundy text-white"> <div className="max-w-4xl mx-auto text-center">
+return ( <section id="faq" className="py-24 px-4 bg-burgundy text-white"> <div className="max-w-4xl mx-auto text-center">
 
 
   

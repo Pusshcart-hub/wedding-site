@@ -2,7 +2,7 @@ import FadeIn from "./FadeIn";
 import Typography from "./Typography";
 export default function Story() {
   return (
-  <section className="relative overflow-hidden py-24 px-4">
+  <section id="story"  className="relative overflow-hidden py-24 px-4">
 
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
