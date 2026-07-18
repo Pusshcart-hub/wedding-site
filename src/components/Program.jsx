@@ -1,10 +1,10 @@
 import Typography from "./Typography";
 
 const events = [
-  { time: "12:30 PM", title: "Guest Arrival & Seating", desc: "Santuario de San Vicente de Paul" },
+  { time: "12:30 PM", title: "Guest Arrival & Seating", desc: "Santuario de San Vicente de Paul: Shrine of the Poor" },
   { time: "1:15 PM", title: "Wedding Ceremony", desc: "Processional • Exchange of Vows & Rings\n• Unity Ceremony • Final Blessing" },
   { time: "2:30 PM", title: "Pictorials", desc: "Photos with Entourage • Couple Portraits \n• Empty Reception Hall Photos" },
-  { time: "3:00 PM", title: "Cocktail Hour & Socials", desc: "Drinks & Foods" },
+  { time: "3:00 PM", title: "Cocktail Hour & Socials", desc: "Drinks & Snacks" },
   { time: "4:00 PM", title: "Reception Program & Dinner", desc: "Grand Entrance of the Newlyweds \n• Wedding Traditions • Dinner" },
 ];
 
