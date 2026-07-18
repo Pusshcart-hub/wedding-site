@@ -53,7 +53,8 @@ export default function Hero() {
         >
           <Typography as="p" variant="names" className="!text-4xl sm:!text-6xl mb-6 sm:mb-9 leading-none text-burgundy">The wedding</Typography>
           <Typography as="p" variant="label" className="!text-sm sm:!text-base mb-3 sm:mb-4 !font-bold !text-gold drop-shadow-xl">Joanna <span className="text-gold font-bold italic">&</span> Vincent</Typography>
-          <Typography as="p" variant="label2" className="!text-xs sm:!text-sm mb-6 sm:mb-10 !font-bold !text-gold drop-shadow-xl">OCTOBER 17, 2026</Typography>
+          <Typography as="p" variant="label2" className="!text-xs sm:!text-sm mb-6 sm:mb-4 !font-bold !text-gold drop-shadow-xl">OCTOBER 17, 2026</Typography>
+          <Typography as="div" variant="context" className="text-gray-600 mb-10 !tracking-[0.7em] !text-rose-900">#ConVincedJana</Typography> 
           <Typography as="p" variant="heading" className="!text-2xl sm:!text-4xl mb-4 sm:mb-5 text-plum2 font-bold">FOREVER STARTS SOON</Typography>
         </motion.div>
 

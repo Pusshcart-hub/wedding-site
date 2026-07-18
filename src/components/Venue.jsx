@@ -25,12 +25,36 @@ export default function Venue() {
             </Typography>
            
             <div className="flex flex-col sm:flex-row gap-6">
-              <div className="w-full sm:w-1/2 h-[250px] sm:h-[300px] rounded-xl overflow-hidden shadow-md">
+              <div className="relative w-full sm:w-1/2 h-[250px] sm:h-[300px] rounded-xl overflow-hidden shadow-md">
                 <img
-                  src="/santuario.png" // put your image in /public
+                  src="/santuario2.png" // put your image in /public
                   alt="Church"
                   className="w-full h-full object-cover"
                 />
+
+                {/* QR CODE — clickable, opens directions in new tab */}
+                <a
+                  href="/directions.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-3 left-3"
+                >
+                  <img
+                    src="/qr.png"
+                    alt="Scan for Directions"
+                    className="w-16 h-16 sm:w-20 sm:h-20 rounded-md shadow-md cursor-pointer hover:opacity-90 transition-opacity"
+                  />
+                </a>
+
+                {/* "Click me" label + arrow pointing at the QR */}
+                <div className="absolute top-7 left-[76px] sm:left-[92px] flex items-center gap-1 pointer-events-none">
+                  <span className="text-burgundy text-2xl leading-none rotate-[-20deg] drop-shadow-md" aria-hidden="true">
+                    ↖
+                  </span>
+                  <span className="text-burgundy text-xs italic font-semibold drop-shadow-md whitespace-nowrap">
+                    Click me
+                  </span>
+                </div>
               </div>
 
               {/* RIGHT: MAP */}

@@ -197,6 +197,7 @@ export default function RSVP() {
                 </Typography>
                 <Typography as="div" variant="context" className="text-gray-600 mb-6">
                   We're so happy you'll be joining us. We can't wait to celebrate with you on October 17!
+                  <Typography as="div" variant="context" className="text-gray-600 mt-2 !tracking-wide !text-rose-400">#ConVincedJana</Typography> 
                   <a
                     href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Joanna+%26+Vincent+Wedding&dates=20261017T040000Z/20261017T130000Z&location=Santuario+de+San+Vicente+de+Paul,+Quezon+City"
                     target="_blank"
