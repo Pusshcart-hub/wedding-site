@@ -28,7 +28,7 @@ export default function Venue() {
               {/* LEFT: CHURCH PHOTO */}
               <div className="w-full sm:w-1/2 h-[262px] sm:h-[312px] rounded-xl overflow-hidden shadow-md">
                 <img
-                  src="/santuario2.png" // put your image in /public
+                  src="/santuario2.jpg" // put your image in /public
                   alt="Church"
                   className="w-full h-full object-cover"
                 />

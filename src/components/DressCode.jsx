@@ -7,7 +7,7 @@ export default function DressCode() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/bg_motif.png"
+          src="/bg_motif.webp"
           alt="Dress Code Background"
           className="w-full h-full object-cover"
         />

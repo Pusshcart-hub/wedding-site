@@ -36,7 +36,7 @@ export default function Story() {
                 className="absolute rounded-sm overflow-hidden shadow-lg"
                 style={{ width: '60%', aspectRatio: '3/2', left: '50%', transform: 'translateX(-50%)', top: '17%', zIndex: 2 }}
               >
-                <img src="/storyMid.jpeg" alt="Us together" className="w-full h-full object-contain" />
+                <img src="/preview.jpg" alt="Us together" className="w-full h-full object-contain" />
               </div>
 
               {/* Left photo — grayscale, slightly rotated */}
